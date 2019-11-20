@@ -4,6 +4,7 @@ class Course:
         self.name = name
         self.credits = cred
         self.prereq = pr
+        self.incoming = []
 
     # setting functions
     def set_course_num(self, c_num):
@@ -73,7 +74,7 @@ class Course:
 
         :return:
         """
-        if self.get_course_num() != "" and self.get_credits() != 0 and self.pr != []:
+        if self.get_course_num() != "" and self.get_name() != "" and self.get_credits() != 0:
             return True
         return False
 
@@ -87,4 +88,18 @@ class Course:
         print("Credits: ", self.get_credits())
         print("Prerequisites: ", self.get_prerequisite())
 
+
+class course_database():
+    def __init__(self, c_code):
+        self.c_code = c_code
+        self.table = {}
+
+    def add_course(self, course):
+        self.table[course.get_course_num()] = course
+
+    def get_table(self):
+        return self.table
+
+    def get_course(self, num):
+        return self.table[num]
 
