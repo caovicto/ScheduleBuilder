@@ -4,19 +4,18 @@ from pdfminer.layout import LTTextBoxHorizontal, LAParams
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 import re
-import collections
-import sys
+from selenium import webdriver
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 
-# importing writing modules
-import json
-
-# importing class courses
 from course import *
 
 
 #######################################################
 # Parsing Information from pdf lines
 #######################################################
+
 def find_c_info(line, c_code):
     """
     if line contains course code, 3 digit number. and full course name, return pair of course code and name
@@ -103,66 +102,110 @@ def parse_file(file_scrape, c_code):
     :param file_scrape:
     :return:
     """
-    # variables for file scraping
-    document = open(file_scrape, 'rb')
+    url = 'https://reg.msu.edu/Courses/Search.aspx'
+    driver = webdriver.Chrome(executable_path="/usr/lib/chromium-browser/chromedriver")
+    driver.get(url)
 
-    rsrcmgr = PDFResourceManager()
-    laparams = LAParams()
-    device = PDFPageAggregator(rsrcmgr, laparams=laparams)
-    interpreter = PDFPageInterpreter(rsrcmgr, device)
+    select = "//select[@id='MainContent_ddlSubjectCode']/option[@value='"+c_code+"']"
+    driver.find_element_by_xpath(select).click()
 
-    # variables
-    course = Course()
-    temp_database = course_database(c_code)
-    window = collections.deque()
+    driver.find_element_by_xpath("//input[@id='MainContent_btnSubmit']").click()
 
-    # loop for each line in file
-    for pg in PDFPage.get_pages(document):
-        interpreter.process_page(pg)
-        layout = device.get_result()
-        waiting = ["|", "/", "-", "\\"]
+    try:
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "MainContent_divSearchResults"))
+        )
 
-        ind = 0
+        course_name = driver.find_elements_by_xpath("//h3")
+        info = driver.find_elements_by_xpath("//div[starts-with(@id, 'MainContent_rptrSearchResults_divMainDetails_')]")
+        header = info.
+        course = Course()
+        temp_database = CourseDatabase(c_code)
 
-        for ele in layout:
-            # sys.stdout.write(waiting[ind])
-            # sys.stdout.flush()
-            # ind = (ind+1) % 4
-            if isinstance(ele, LTTextBoxHorizontal):
-                # splitting by line
-                for line in ele.get_text().split('\n'):
-                    window.append(line)
+        for i in range(len(course_name)):
+            # print(course_name[i].text, info[i].text)
+            course_info = info[i].text.split('\n')
 
-        while window:
-            # sys.stdout.write(waiting[ind])
-            # sys.stdout.flush()
-            # ind = (ind+1) % 4
+            # start
+            course = Course()
 
-            pop = window.popleft()
-            # check if row contains course info
-            if find_c_info(pop, c_code):
-                temp_database.add_course(course)
-
-                # course.print_course()
-                course = Course()
-
-                course.set_course_num(find_c_info(pop, c_code)[0])
-                course.set_name(find_c_info(pop, c_code)[1])
+            course.set_course_num(find_c_info(course_name[i].text, c_code)[0])
+            course.set_name(find_c_info(course_name[i].text, c_code)[1])
 
             # check if credits
-            if find_credit(pop):
-                course.set_credits(find_credit(pop))
+            for line in range(len(course_info)):
+                # print(course_info[line])
+                if find_credit(course_info[line]):
+                    course.set_credits(find_credit(course_info[line]))
 
-            if find_prerequisite(pop):
-                pop = window.popleft()
-                prereq = ""
-                while ":" not in pop:
-                    prereq += " " + pop
-                    pop = window.popleft()
+                if find_prerequisite(course_info[line]):
+                    prereq = course_info[line+1]
+                    course.set_prerequisite(create_prerequisite(prereq))
+                    break
 
-                course.set_prerequisite(create_prerequisite(prereq))
+            # check if row contains course info
+            temp_database.add_course(course)
+            course.print_course()
 
-    return temp_database
+    finally:
+        driver.quit()
+
+
+    # print(results.text)
+    # for ele in results:
+    #     print(ele.get_attribute("innerHTML"))
+
+    # time.sleep(3)
+
+    # for ele in select:
+    #     print(ele)
+    # select.select_by_visible_text(c_code)
+    #
+    # results = driver.find_elements_by_xpath("//*[@id='MainContent_divSearchResults']")
+    # # print(results)
+    # for ele in results:
+    #     print(ele.text)
+    #
+
+
+
+    # # variables for file scraping
+    # document = open(file_scrape, 'rb')
+    #
+    # rsrcmgr = PDFResourceManager()
+    # laparams = LAParams()
+    # device = PDFPageAggregator(rsrcmgr, laparams=laparams)
+    # interpreter = PDFPageInterpreter(rsrcmgr, device)
+    #
+    # # variables
+
+    # window = collections.deque()
+    #
+    # # loop for each line in file
+    # for pg in PDFPage.get_pages(document):
+    #     interpreter.process_page(pg)
+    #     layout = device.get_result()
+    #     waiting = ["|", "/", "-", "\\"]
+    #
+    #     ind = 0
+    #
+    #     for ele in layout:
+    #         # sys.stdout.write(waiting[ind])
+    #         # sys.stdout.flush()
+    #         # ind = (ind+1) % 4
+    #         if isinstance(ele, LTTextBoxHorizontal):
+    #             # splitting by line
+    #             for line in ele.get_text().split('\n'):
+    #                 window.append(line)
+    #
+    #     while window:
+    #         # sys.stdout.write(waiting[ind])
+    #         # sys.stdout.flush()
+    #         # ind = (ind+1) % 4
+    #
+    #         pop = window.popleft()
+    #
+    # return temp_database
 
 
 
@@ -223,6 +266,6 @@ def contains_int(s):
 
 # file_scrape = input("Enter pdf: ")
 file_s = "../courses/cse.pdf"
-cse_database = parse_file(file_s, "CSE")
-for ele in cse_database.get_table():
-    print(cse_database.get_course(ele).print_course())
+parse_file(file_s, "CSE")
+# for ele in cse_database.get_table():
+#     print(cse_database.get_course(ele).print_course())

@@ -89,7 +89,7 @@ class Course:
         print("Prerequisites: ", self.get_prerequisite())
 
 
-class course_database():
+class CourseDatabase:
     def __init__(self, c_code):
         self.c_code = c_code
         self.table = {}
