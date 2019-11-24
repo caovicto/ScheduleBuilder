@@ -1,4 +1,8 @@
+import re
 import time
+
+import requests
+from bs4 import BeautifulSoup
 from selenium import webdriver
 
 
@@ -26,10 +30,6 @@ class Major:
         results = driver.find_elements_by_xpath("//*[@id='MainContent_divDnData']")
         # header = driver.find_elements_by_xpath("//strong")
         info = driver.find_elements_by_xpath("//div[@class='panel-body']")
-        # for ele in info:
-        #     print(ele.text)
-        # print(results)
-
 
         for i in range(len(info)):
             # if info[i].text.find("Required Credits:") != -1:
@@ -53,8 +53,18 @@ class Major:
 
 
 class MajorDatabase:
-    def __init(self):
+    def __init__(self):
         self.table = {}
+
+        url = 'https://reg.msu.edu/AcademicPrograms/Programs.aspx?PType=UN'
+        response = requests.get(url)
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        for ele in soup.findAll('a', attrs={'href': re.compile("^ProgramDetail")}):
+            s = ele.get('href')
+            m = Major(s[len(s) - 4:len(s)], ele.text)
+
+            self.add_major(m)
 
     def add_major(self, major):
         name = major.name
@@ -62,17 +72,13 @@ class MajorDatabase:
         if not self.table.get(name):
             self.table[name] = major
 
-    def find_course(self, n):
-        found = self.table.get(n)
-        if not found:
-            for alt in self.alias:
-                found = self.table.get(alt)
-                if found:
-                    break
-
-        return found
+    def get_major(self, major_name):
+        return self.table.get(major_name)
 
     def print_database(self):
         print(self.table)
+
+
+
 
 

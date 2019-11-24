@@ -88,18 +88,3 @@ class Course:
         print("Credits: ", self.get_credits())
         print("Prerequisites: ", self.get_prerequisite())
 
-
-class CourseDatabase:
-    def __init__(self, c_code):
-        self.c_code = c_code
-        self.table = {}
-
-    def add_course(self, course):
-        self.table[course.get_course_num()] = course
-
-    def get_table(self):
-        return self.table
-
-    def get_course(self, num):
-        return self.table[num]
-
