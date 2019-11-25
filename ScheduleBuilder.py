@@ -1,6 +1,6 @@
-from Schedule import *
+from Student import *
+from Student import *
 
 
-Alice = Student("Accounting")
-ScheduleBuilder = Schedule()
-ScheduleBuilder.create_schedule(Alice)
+Suj = Student("Journalism")
+Suj.create_schedule()

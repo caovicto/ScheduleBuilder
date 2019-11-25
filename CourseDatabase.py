@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
 from Course import *
-
+from LineParsers import *
 
 #######################################################
 # Parsing Information from pdf lines
@@ -34,7 +34,6 @@ class CourseDatabase:
                 "//div[starts-with(@id, 'MainContent_rptrSearchResults_divMainDetails_')]")
 
             for i in range(len(course_name)):
-                # print(course_name[i].text, info[i].text)
                 course_info = info[i].text.split('\n')
 
                 # start
@@ -149,63 +148,6 @@ def combine_course(index, parsed_line):
 
     return s[:len(s)-1], index
 
-
-
-
-
-#######################################################
-# Extra Information for parsing
-#######################################################
-
-def int_present(line):
-    """
-
-    :param line:
-    :return:
-    """
-    parsed_line = re.findall(r"[\w]+|[()]", line)
-    for ele in parsed_line:
-        if is_int(ele):
-            return ele
-
-def find_successor(line, word):
-    """
-
-    :param line:
-    :param word:
-    :return:
-    """
-    parsed_line = re.findall(r"[\w]+|[()]", line)
-    for i in range(len(parsed_line)):
-        if parsed_line[i] == word and (i+1 < len(parsed_line)):
-            return parsed_line[i+1]
-
-
-
-def is_int(num):
-    """
-
-    :param num:
-    :return:
-    """
-    try:
-        int(num)
-        return True
-    except ValueError:
-        return False
-
-
-def contains_int(s):
-    """
-
-    :param s:
-    :return:
-    """
-    for c in s:
-        if is_int(c):
-            return True
-
-    return False
 
 
 

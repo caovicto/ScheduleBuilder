@@ -3,8 +3,12 @@ class Course:
         self.course_num = c_num
         self.name = name
         self.credits = cred
-        self.prereq = pr
-        self.incoming = []
+
+        self.pr_arith = pr
+        self.prereqs = []
+        self.postreqs = []
+
+        self.completed = False
 
     # setting functions
     def set_course_num(self, c_num):
@@ -68,15 +72,16 @@ class Course:
         """
         return self.prereq
 
+    def generate_prereqs(self):
+        pass
+
     # information completion
-    def is_complete(self):
+    def set_complete(self):
         """
 
         :return:
         """
-        if self.get_course_num() != "" and self.get_name() != "" and self.get_credits() != 0:
-            return True
-        return False
+        self.completed = True
 
     # printing
     def print_course(self):
