@@ -7,6 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from Course import *
 from LineParsers import *
 
+
 #######################################################
 # Parsing Information from pdf lines
 #######################################################
@@ -60,8 +61,6 @@ class CourseDatabase:
         finally:
             driver.quit()
 
-
-
     def add_course(self, course):
         self.table[course.get_course_num()] = course
 
@@ -81,7 +80,7 @@ def find_c_info(line, c_code):
     """
     first_word = find_successor(line, int_present(line))
     if line.find(c_code) == 0 and int_present(line) and first_word and first_word[0].isupper():
-        return c_code+int_present(line), line[line.find(first_word):]
+        return c_code + int_present(line), line[line.find(first_word):]
 
 
 def find_credit(line):
@@ -124,7 +123,7 @@ def create_prerequisite(line):
         else:
             c = combine_course(i, parsed_line)
             expression.append(c[0])
-            i = c[1]-1
+            i = c[1] - 1
 
         i += 1
 
@@ -146,8 +145,4 @@ def combine_course(index, parsed_line):
         s += parsed_line[index] + " "
         index += 1
 
-    return s[:len(s)-1], index
-
-
-
-
+    return s[:len(s) - 1], index

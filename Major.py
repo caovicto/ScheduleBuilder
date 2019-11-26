@@ -9,8 +9,9 @@ from LineParsers import *
 
 class Major:
     class Requirement:
-        def __init__(self):
+        def __init__(self, req_number):
             self.completed = False
+            self.req_number = req_number
             self.req_list = []
 
         def set_completed(self):
@@ -56,6 +57,8 @@ class Major:
         # scrape requirement information from website
         info = driver.find_elements_by_xpath("//div[@class='panel-body']")
         paragraphs = info[1].text.split('\n\n')
+
+        counter = 0
 
         # parse website information
         for i in range(len(paragraphs)):
