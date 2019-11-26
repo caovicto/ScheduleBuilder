@@ -1,4 +1,6 @@
 from PriorityHeap import *
+from Course import *
+from CourseDatabase import *
 
 class Graph:
     class Vertex:

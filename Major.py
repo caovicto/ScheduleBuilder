@@ -83,7 +83,8 @@ class Major:
                         req.add_req(new_req)
 
                 req.print_requirements()
-
+                # add requirement to requirement list
+                self.requirements.append(req)
 
         driver.close()
 
