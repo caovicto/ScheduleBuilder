@@ -3,7 +3,13 @@ from selenium import webdriver
 from LineParsers import *
 
 
-class Major:
+class Program:
+    class ReqSet:
+        def __init__(self, n, type_choice, choices):
+            self.number = n
+            self.type_choice = type_choice
+            self.choices = choices
+
     class Requirement:
         def __init__(self):
             """
@@ -32,34 +38,36 @@ class Major:
 
         def __str__(self):
             s = ""
-            for i in range(1, len(self.req_list)+1):
+            for i in range(1, len(self.req_list) + 1):
                 s += str(i) + ". "
-                for ele in self.req_list[i-1].choices:
+                for ele in self.req_list[i - 1].choices:
                     s += ele
 
-    class ReqSet:
-        def __init__(self, n, type_choice, choices):
-            self.number = n
-            self.type_choice = type_choice
-            self.choices = choices
+    ################################################################
+    # Program functions
+    ################################################################
+    def __init__(self, p_number, p_name, p_type):
+        """
 
-    def __init__(self, p_number, n):
+        """
         self.program_number = p_number
-        self.name = n
-        self.credits = 0
+        self.program_name = p_name
+        self.program_type = p_type
 
-        # initialize ang get requirements for major
+        self.credits = 0
         self.requirements = []
+
+        # initialize credits and requirements
         self.initialize_requirements()
 
         self.alias = []
 
     def initialize_requirements(self):
         """
-        Get requirements for major
+        Get requirements for program
         """
         # initialize selenium
-        url = 'https://reg.msu.edu/AcademicPrograms/ProgramDetail.aspx?Program=' + self.get_number()
+        url = 'https://reg.msu.edu/AcademicPrograms/ProgramDetail.aspx?Program=' + self.program_number
         driver = webdriver.Chrome(executable_path="/usr/lib/chromium-browser/chromedriver")
         driver.get(url)
 
@@ -71,7 +79,7 @@ class Major:
 
         # parse website information
         for i in range(len(paragraphs)):
-            # finds total credits for major
+            # finds total credits for program
             if paragraphs[i].find("Required Credits:") != -1:
                 self.credits = find_total_credits(paragraphs[i])
                 print("CREDITS", self.credits, "\n")
@@ -97,8 +105,10 @@ class Major:
 
         driver.close()
 
-
     def list_courses(self):
+        """
+        Lists all courses within all requirements
+        """
         ret_list = []
         for req in self.requirements:
             for course in req.get_courses():  # for list of choices in req
@@ -106,9 +116,5 @@ class Major:
 
         return ret_list
 
-    def print_major(self):
-        print(self.name)
-
-
-
-
+    def get_number(self):
+        return self.program_number

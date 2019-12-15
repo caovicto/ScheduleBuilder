@@ -1,42 +1,93 @@
 import requests
 from bs4 import BeautifulSoup
 
-from Major import *
+from Program import *
+import sqlite3
 
 
-class MajorDatabase:
+class ProgramDatabase:
     def __init__(self):
-        self.table = {}
+        self.path = "/home/victoria/ScheduleBuilder/Databases/Programdb.sqlite3"
 
+        self.connection = sqlite3.connect(self.path)
+        self.cur = self.connection.cursor()
+
+    def initialize_database(self):
+        """
+        Generates table within
+        :param name: name of the table
+        """
+        major_sql = """
+        CREATE TABLE Major (
+            Pid text NOT NULL,
+            name text NOT NULL); """
+
+        self.cur.execute(major_sql)
+
+        minor_sql = """
+                CREATE TABLE Minor (
+                    Pid text NOT NULL,
+                    name text NOT NULL); """
+
+        self.cur.execute(minor_sql)
+
+    def initialize_majors(self):
+        # ADDING MAJORS
+        url = 'https://reg.msu.edu/AcademicPrograms/Programs.aspx?PType=UN'
+        response = requests.get(url)
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        # add all majors within page
+        for ele in soup.findAll('a', attrs={'href': re.compile("^ProgramDetail")}):
+            s = ele.get('href')  # text for link
+
+            p_name = s[len(s) - 4:len(s)]
+            p_number = ele.text
+            p_type = "Major"
+
+            self.add_program(p_name, p_number, p_type)
+
+        # ADDING MINORS
         url = 'https://reg.msu.edu/AcademicPrograms/Programs.aspx?PType=UN'
         response = requests.get(url)
 
         soup = BeautifulSoup(response.text, "html.parser")
         for ele in soup.findAll('a', attrs={'href': re.compile("^ProgramDetail")}):
-            s = ele.get('href')
-            m = Major(s[len(s) - 4:len(s)], ele.text)
+            s = ele.get('href')  # text for link
 
-            self.add_major(m)
+            p_name = s[len(s) - 4:len(s)]
+            p_number = ele.text
+            p_type = "Minor"
 
-    def add_major(self, major):
+            self.add_program(p_name, p_number, p_type)
+
+    def initialize_minors(self):
+
+    def add_program(self, p_name, p_num, p_type):
         """
-        Adds major name as key, major object as value
-        :param major: Major Object
+        Adds program name as key, program object as value
+        :param program: program Object
         """
-        name = major.name
+        insert_sql = "INSERT INTO " + p_type + " (Pid, name) " + \
+                     "VALUES (?, ?, ?, ?, ?)"
 
-        if not self.table.get(name):
-            self.table[name] = major
+        num = vals[0]
+        nm = vals[1]
+        sem = vals[2]
+        cred = vals[3]
+        prereq = vals[4]
 
-    def get_major(self, major_name):
+        self.cur.execute(insert_sql, (num, nm, sem, cred, prereq))
+
+    def get_program(self, program_name):
         """
-        Grabs all requirement information from major
+        Grabs all requirement information from program
         """
-        if self.table.get(major_name):
-            major = self.table.get(major_name)
-            major.get_requirements()
+        if self.table.get(program_name):
+            program = Program()
+            program.get_requirements()
 
-            return major
+            return program
 
     def print_database(self):
         print(self.table)
