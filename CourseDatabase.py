@@ -1,6 +1,7 @@
 import re
 import time
 import sqlite3
+import os
 from sqlite3 import Error
 
 from selenium import webdriver
@@ -18,18 +19,21 @@ from LineParsers import *
 #######################################################
 class CourseDatabase:
     def __init__(self):
-        self.path = "/home/victoria/ScheduleBuilder/course_database/db.sqlite3"
+        self.path = "/home/victoria/ScheduleBuilder/Databases/Coursedb.sqlite3"
+
+        self.connection = sqlite3.connect(self.path)
+        self.cur = self.connection.cursor()
+
         self.create_database()
 
-    def db_connect(self):
-        con = sqlite3.connect(self.path)
-        return con
+        # printing database
+
+
 
     def create_database(self):
-        con = self.db_connect()
-        cur = con.cursor()
-
-
+        """
+        DO NOT USE UNLESS RECONFIGURING DATABASE
+        """
         # entering driver information
         url = 'https://reg.msu.edu/Courses/Search.aspx'
         driver = webdriver.Chrome(executable_path="/usr/lib/chromium-browser/chromedriver")
@@ -39,27 +43,24 @@ class CourseDatabase:
         options = [x for x in selections.find_elements_by_tag_name("option")]
         driver.set_script_timeout(300)
 
-        for i in range(1, len(options)):
-            subject_element = options[i]
+        # looping through all subjects
+        for text in range(1, len(options)):
+            # collect subject code
+            subject_element = options[text]
             subject = subject_element.get_attribute("value")
-
-            # add to sql
-            course_sql = """
-            CREATE TABLE """ + subject + """ (
-                id integer PRIMARY KEY,
-                name text NOT NULL,
-                credits integer NOT NULL,
-                prerequisite text) """
-            cur.execute(course_sql)
+            subject_table = "c" + subject
 
             try:
+                # add subject table to sql
+                self.generate_table(subject_table)
+
                 # selecting subject code
-                # select = "//select[@id='MainContent_ddlSubjectCode']/option[@value='" + subject + "']"
                 subject_element.click()
 
                 # submission
                 driver.find_element_by_xpath("//input[@id='MainContent_btnSubmit']").click()
 
+                # wait until body has loaded and contains subject information
                 WebDriverWait(driver, 5).until(
                     EC.presence_of_element_located((By.ID, "MainContent_divSearchResults"))
                 )
@@ -72,66 +73,176 @@ class CourseDatabase:
                 info = driver.find_elements_by_xpath(
                     "//div[starts-with(@id, 'MainContent_rptrSearchResults_divMainDetails_')]")
 
-                # Creating course infromation
+
+                # Creating course information
                 for i in range(len(course_name)):
                     try:
-                        course_info = info[i].text.split('\n')
-                        heading = course_name[i].text.split()
+                        heading = course_name[i].text.split()  # course name
+                        sub_id = heading[1]  # subject id
+                        sub_name = ' '.join(heading[2:])
 
-                        # print(heading)
-                        # print(course_info)
+                        course_info = info[i].text.split('\n')  # course information
 
-                        # start
-                        # course = Course()
-                        # course.set_course_num(' '.join(heading[0:2]))
-                        # course.set_name(' '.join(heading[2:]))
+                        # values to insert: id, name, semesters, credits, prereqs
+                        vals = [sub_id, sub_name, None, None, None]
 
-                        # check if credits
+                        # parse course information
                         for line in range(len(course_info)):
-                            # print(course_info[line])
-                            if find_credit(course_info[line]):
-                                # course.set_credits(find_credit(course_info[line]))
-                                pass
+                            # Get semester information
+                            if course_info[line] == "Semester:":
+                                sem = ""
+                                if course_info[line+1].find("Fall") != -1:
+                                    sem += "F"
+                                if course_info[line+1].find("Spring") != -1:
+                                    sem += "Sp"
+                                if course_info[line+1].find("Summer") != -1:
+                                    sem += "Su"
 
-                            if find_prerequisite(course_info[line]):
-                                prereq = course_info[line + 1]
-                                # course.set_prerequisite(create_prerequisite(prereq))
+                                vals[2] = sem  # add to value array
+                                line += 1
+
+                            # Get credit information
+                            elif course_info[line] == "Credits:":
+                                cred = ""
+                                parse = course_info[line+1].split()
+                                if parse[0] == "Total":  # if total credits
+                                    cred = parse[2]
+                                else:  # if variable credits
+                                    cred = ' '.join(re.findall(r"\d+", course_info[line+1]))
+
+                                vals[3] = cred  # add to value array
+                                line += 1
+
+                            # Get prereq information
+                            elif course_info[line] == "Prerequisite:":
+                                vals[4] = course_info[line+1]  # add prerequisite info
                                 break
 
-                        # check if row contains course info
-                        # self.add_course(course)
-                        # course.print_course()
+                        self.insert_to_table(subject_table, vals)
 
                     except IndexError:
                         break
 
-            except (NoSuchElementException, TimeoutException) as e:
+            except (NoSuchElementException, TimeoutException, sqlite3.OperationalError) as e:
                 pass
 
+        print("\n\nDONE\n\n")
         driver.quit()
 
-    def add_course(self, course):
-        self.table[course.get_course_num()] = course
+        self.connection.commit()
 
-    def get_table(self):
-        return self.table
+    def generate_table(self, name):
+        """
+        Generates table within
+        :param name: name of the table
+        """
+        course_sql = """
+        CREATE TABLE """ + name + """ (
+            Cid text NOT NULL,
+            name text NOT NULL,
+            semester text NOT NULL,
+            credits text NOT NULL,
+            prerequisites text); """
 
+        self.cur.execute(course_sql)
+
+
+    def insert_to_table(self, subject, vals):
+        """
+        Inserts
+        :param subject:
+        :param vals: values to insert into table
+        """
+        insert_sql = "INSERT INTO " + subject + " (Cid, name, semester, credits, prerequisites) " + \
+                     "VALUES (?, ?, ?, ?, ?)"
+
+        num = vals[0]
+        nm = vals[1]
+        sem = vals[2]
+        cred = vals[3]
+        prereq = vals[4]
+
+        self.cur.execute(insert_sql, (num, nm, sem, cred, prereq))
+
+
+    def list_tables(self):
+        """
+        Lists all tables in database
+        """
+        fetch_sub = "SELECT name FROM sqlite_master WHERE type='table'"
+        self.cur.execute(fetch_sub)
+        return self.cur.fetchall()
+
+
+    def list_elements_in_table(self, code):
+        """
+        lists all elements form table with name cCode
+        """
+        self.cur.execute("SELECT Cid, name, semester, credits, prerequisites FROM "+code)
+        for ele in self.cur.fetchall():
+            print(ele)
+
+    def list_entire_database(self):
+        """
+        Lists all elements within Database
+        """
+        for ele in self.list_tables():
+            print("***************************************************************************")
+            print("\nTABLE: ", ele[0], "\n")
+            self.list_elements_in_table(ele[0])
+
+
+    ##########################################################
+    #  Retrieving Courses from Database
+    ##########################################################
     def get_course(self, code):
         """
         Gets course item from course database
         """
-        if self.table.get(code):
-            return self.table[code]
+        table = subject_code(code)
+        course_id = subject_id(code)
+
+        try:
+            self.cur.execute("SELECT Cid, name, semester, credits, prerequisites FROM " + table + \
+                             " WHERE Cid='"+ course_id +"'")
+            ele = self.cur.fetchone()
+            print(ele)
+
+            course = Course()
+
+            # course.set_course_num(' '.join(heading[0:2]))
+            # course.set_name(' '.join(heading[2:]))
+            # course.set_credits(find_credit(course_info[line]))
+            # course.set_prerequisite(create_prerequisite(prereq))
+            # self.add_course(course)
+            # course.print_course()
+            return course
+
+        except ValueError:
+            pass
 
 
 def subject_code(s):
+    """
+    Returns subject code from string s
+    :param s: string to find subject id
+    """
     code = ""
     for letter in s:
         if is_int(letter):
             break
         code += letter
-
     return code
+
+
+def subject_id(s):
+    """
+    Returns Cid from string s
+    :param s: string to find subject id
+    """
+    for letter in range(len(s)):
+        if is_int(s[letter]):
+            return s[letter:]
 
 
 def find_c_info(line):
