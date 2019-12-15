@@ -1,11 +1,17 @@
 from Utilities.PriorityHeap import *
 from Course import *
+from CourseDatabase import *
+
 
 class Graph:
     class Vertex:
         def __init__(self, item):
             """
-            :param item: (Course) course item
+            self.item: (Course) course object
+            self.in_edges: (dict<edges>) list of incoming edges
+            self.num_in: (int) number of incoming edges
+            self.out_edges: (dict<edges>) list of outgoing edges
+            self.num_out: (int) number of outgoing edges
             """
             self.item = item
 
@@ -29,7 +35,7 @@ class Graph:
 
         def all_in_edges(self):
             """
-
+            :return: (list<edges) incoming edges list
             """
             temp = []
             for ele in self.in_edges:
@@ -39,7 +45,7 @@ class Graph:
 
         def num_in(self):
             """
-
+            :return: (int) private variable of incoming edges
             """
             return self.num_in
 
@@ -98,7 +104,8 @@ class Graph:
     class Edge:
         def __init__(self, source, dest):
             """
-
+            self.source: (string) code for source vertex
+            self.dest: (string) code for destination vertex
             """
             self.source = source
             self.dest = dest
@@ -116,6 +123,13 @@ class Graph:
             return self.source
 
     def __init__(self):
+        """
+        self.courseDB: (CourseDatabase) connection to course database to retrieve course information
+        """
+        # CourseDatabase
+        self.courseDB = CourseDatabase()
+
+        # Vertex list
         self.vertex_list = {}
 
     def all_vertices(self):
@@ -140,7 +154,7 @@ class Graph:
         """
 
         """
-        pass
+
 
 
 def TopologicalSort(g):
@@ -151,7 +165,6 @@ def TopologicalSort(g):
     heap = PriorityHeap()
     for ele in copy_g.all_vertices():
         heap.push(ele.in_num(), ele)
-
 
 
 def remove_top(heap):
@@ -168,5 +181,3 @@ def remove_top(heap):
             dest.delete_in_edge(popped)
 
             heap.change_priority()
-
-

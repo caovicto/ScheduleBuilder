@@ -14,7 +14,8 @@ class Course:
 
         self.completed = False
 
-        # printing
+        self.rearrange_prereq()
+        print(self.prerequisites)
 
     def __str__(self):
         """
@@ -89,4 +90,58 @@ class Course:
 
         while s_arith:
             self.prerequisites.append(s_arith.pop())
+
+        # self.remove_duplicates()
+
+    def rearrange_prereq(self):
+        stack = []
+        for ele in self.prerequisites:
+            if ele == "and":
+                first = stack.pop()
+                second = stack.pop()
+                if is_ands(first) and type(second) is str:
+                    first.append([second])
+                    stack.append(first)
+                else:
+                    stack.append([[first], [second]])
+
+            elif ele == "or":
+                first = stack.pop()
+                second = stack.pop()
+                if is_ors(first) and type(second) is str:
+                    first.append(second)
+                    stack.append(first)
+                else:
+                    stack.append([first, second])
+
+            else:
+                stack.append(ele)
+
+        self.prerequisites = stack[0]
+        
+
+def is_ors(l):
+    if type(l) is list:
+        for ele in l:
+            if type(ele) is not str:
+                return False
+
+        return True
+
+    return False
+
+def is_ands(l):
+    if type(l) is list:
+        for ele in l:
+            if type(ele) is not list:
+                return False
+
+        return True
+
+    return False
+
+
+
+
+
 

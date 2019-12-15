@@ -6,6 +6,11 @@ from Utilities.LineParsers import *
 class Program:
     class ReqSet:
         def __init__(self, n, type_choice, choices):
+            """
+            self.number: (int) number for courses/credits
+            self.type_choice: (string) "courses" or "credits"
+            self.choices: (list<string>) courses available
+            """
             self.number = n
             self.type_choice = type_choice
             self.choices = choices
@@ -13,7 +18,8 @@ class Program:
     class Requirement:
         def __init__(self):
             """
-            :param req_number:
+            self.completed: (bool) if the requirement if fulfilled
+            self.req_list: (list<ReqSet>) sets of choices that can fulfill the requirement
             """
             self.completed = False
             self.req_list = []
@@ -50,7 +56,7 @@ class Program:
         """
 
         """
-        self.program_number = p_number
+        self.program_number = str(p_number)
         self.program_name = p_name
         self.program_type = p_type
 
@@ -99,7 +105,6 @@ class Program:
                         new_req = self.ReqSet(info[0], info[1], info[2])
                         req.add_req(new_req)
 
-                req.print_requirements()
                 # add requirement to requirement list
                 self.requirements.append(req)
 
@@ -116,5 +121,10 @@ class Program:
 
         return ret_list
 
-    def get_number(self):
-        return self.program_number
+    def print_requirements(self):
+        """
+        prints all requirements for program
+        """
+        for req in self.requirements:
+            req.print_requirements()
+
