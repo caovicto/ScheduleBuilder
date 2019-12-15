@@ -1,8 +1,9 @@
+import os
 import requests
+import sqlite3
 from bs4 import BeautifulSoup
 
 from Program import *
-import sqlite3
 
 
 class ProgramDatabase:
@@ -12,6 +13,18 @@ class ProgramDatabase:
         self.connection = sqlite3.connect(self.path)
         self.cur = self.connection.cursor()
 
+    def create_database(self):
+        """
+        DO NOT USE UNLESS RECREATING DATABASE
+        """
+        os.remove(self.path)
+
+        self.initialize_database()
+        self.initialize_majors()
+        self.initialize_minors()
+
+        self.list_entire_database()
+
     def initialize_database(self):
         """
         Generates table within
@@ -19,20 +32,25 @@ class ProgramDatabase:
         """
         major_sql = """
         CREATE TABLE Major (
-            Pid text NOT NULL,
+            Pid integer NOT NULL,
             name text NOT NULL); """
 
         self.cur.execute(major_sql)
 
         minor_sql = """
-                CREATE TABLE Minor (
-                    Pid text NOT NULL,
-                    name text NOT NULL); """
+        CREATE TABLE Minor (
+            Pid integer NOT NULL,
+            name text NOT NULL); """
 
         self.cur.execute(minor_sql)
 
+        self.connection.commit()
+
     def initialize_majors(self):
-        # ADDING MAJORS
+        """
+        Adds all majors
+        """
+        # Scraping majors from website
         url = 'https://reg.msu.edu/AcademicPrograms/Programs.aspx?PType=UN'
         response = requests.get(url)
 
@@ -41,54 +59,76 @@ class ProgramDatabase:
         for ele in soup.findAll('a', attrs={'href': re.compile("^ProgramDetail")}):
             s = ele.get('href')  # text for link
 
-            p_name = s[len(s) - 4:len(s)]
-            p_number = ele.text
+            p_number = int(s[len(s) - 4:len(s)])
+            p_name = ele.text
             p_type = "Major"
 
-            self.add_program(p_name, p_number, p_type)
+            self.add_program(p_number, p_name, p_type)
 
-        # ADDING MINORS
-        url = 'https://reg.msu.edu/AcademicPrograms/Programs.aspx?PType=UN'
+        self.connection.commit()
+
+    def initialize_minors(self):
+        # Scraping minors from website
+        url = 'https://reg.msu.edu/AcademicPrograms/Programs.aspx?PType=MNUN'
         response = requests.get(url)
 
         soup = BeautifulSoup(response.text, "html.parser")
         for ele in soup.findAll('a', attrs={'href': re.compile("^ProgramDetail")}):
             s = ele.get('href')  # text for link
+            parse_name = ele.text.split()
 
-            p_name = s[len(s) - 4:len(s)]
-            p_number = ele.text
+            p_number = int(s[len(s) - 4:len(s)])
+            p_name = ' '.join(parse_name[2:])
             p_type = "Minor"
 
-            self.add_program(p_name, p_number, p_type)
+            self.add_program(p_number, p_name, p_type)
 
-    def initialize_minors(self):
+        self.connection.commit()
 
-    def add_program(self, p_name, p_num, p_type):
+    def add_program(self, p_num, p_name, p_type):
         """
         Adds program name as key, program object as value
         :param program: program Object
         """
         insert_sql = "INSERT INTO " + p_type + " (Pid, name) " + \
-                     "VALUES (?, ?, ?, ?, ?)"
+                     "VALUES (?, ?)"
 
-        num = vals[0]
-        nm = vals[1]
-        sem = vals[2]
-        cred = vals[3]
-        prereq = vals[4]
+        self.cur.execute(insert_sql, (p_num, p_name))
 
-        self.cur.execute(insert_sql, (num, nm, sem, cred, prereq))
-
-    def get_program(self, program_name):
+    def list_elements_in_table(self, program):
         """
-        Grabs all requirement information from program
+        lists all elements form table with name cCode
         """
-        if self.table.get(program_name):
-            program = Program()
-            program.get_requirements()
+        self.cur.execute("SELECT Pid, name FROM " + program)
+        for ele in self.cur.fetchall():
+            print(ele)
 
-            return program
+    def list_entire_database(self):
+        """
+        Lists all elements within Database
+        """
+        self.cur.execute("SELECT name FROM sqlite_master WHERE type='table'")
+        for ele in self.cur.fetchall():
+            print("***************************************************************************")
+            print("\nTABLE: ", ele[0], "\n")
+            self.list_elements_in_table(ele[0])
 
-    def print_database(self):
-        print(self.table)
+
+    def get_program(self, p_name, p_type):
+        """
+        Gets program from database
+        """
+        try:
+            self.cur.execute("SELECT Pid, name FROM " + p_type +
+                             " WHERE name='" + p_name + "'")
+            ele = self.cur.fetchone()
+            return ele
+
+        except sqlite3.OperationalError:
+            self.cur.execute("SELECT Pid, name FROM " + p_type)
+            for ele in self.cur.fetchall():
+                if ele[1].find(p_name) != -1:
+                    return ele
+
+            return None
 

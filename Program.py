@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-from LineParsers import *
+from Utilities.LineParsers import *
 
 
 class Program:
