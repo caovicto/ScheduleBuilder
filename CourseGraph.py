@@ -140,8 +140,6 @@ class Graph:
         """
 
         """
-        self.courseDriver.retrieve_courses()  # grabs course object with given course
-
         for ele in course:
             c_vertex = Graph.Vertex(self.courseDriver.get_course(ele))
             self.vertex_list[course] = c_vertex

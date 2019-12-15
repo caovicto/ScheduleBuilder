@@ -1,5 +1,7 @@
 import re
 import time
+import sqlite3
+from sqlite3 import Error
 
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
@@ -16,10 +18,18 @@ from LineParsers import *
 #######################################################
 class CourseDatabase:
     def __init__(self):
-        self.table = {}
-        self.added_subjects = {}
+        self.path = "/home/victoria/ScheduleBuilder/course_database/db.sqlite3"
+        self.create_database()
 
-    def retrieve_courses(self):
+    def db_connect(self):
+        con = sqlite3.connect(self.path)
+        return con
+
+    def create_database(self):
+        con = self.db_connect()
+        cur = con.cursor()
+
+
         # entering driver information
         url = 'https://reg.msu.edu/Courses/Search.aspx'
         driver = webdriver.Chrome(executable_path="/usr/lib/chromium-browser/chromedriver")
@@ -33,6 +43,15 @@ class CourseDatabase:
             subject_element = options[i]
             subject = subject_element.get_attribute("value")
 
+            # add to sql
+            course_sql = """
+            CREATE TABLE """ + subject + """ (
+                id integer PRIMARY KEY,
+                name text NOT NULL,
+                credits integer NOT NULL,
+                prerequisite text) """
+            cur.execute(course_sql)
+
             try:
                 # selecting subject code
                 # select = "//select[@id='MainContent_ddlSubjectCode']/option[@value='" + subject + "']"
@@ -41,11 +60,10 @@ class CourseDatabase:
                 # submission
                 driver.find_element_by_xpath("//input[@id='MainContent_btnSubmit']").click()
 
-
-                WebDriverWait(driver, 10).until(
+                WebDriverWait(driver, 5).until(
                     EC.presence_of_element_located((By.ID, "MainContent_divSearchResults"))
                 )
-                WebDriverWait(driver, 10).until(
+                WebDriverWait(driver, 5).until(
                     EC.text_to_be_present_in_element((By.XPATH, '//h3'), subject)
                 )
 
@@ -64,24 +82,25 @@ class CourseDatabase:
                         # print(course_info)
 
                         # start
-                        course = Course()
-                        course.set_course_num(' '.join(heading[0:2]))
-                        course.set_name(' '.join(heading[2:]))
+                        # course = Course()
+                        # course.set_course_num(' '.join(heading[0:2]))
+                        # course.set_name(' '.join(heading[2:]))
 
                         # check if credits
                         for line in range(len(course_info)):
                             # print(course_info[line])
                             if find_credit(course_info[line]):
-                                course.set_credits(find_credit(course_info[line]))
+                                # course.set_credits(find_credit(course_info[line]))
+                                pass
 
                             if find_prerequisite(course_info[line]):
                                 prereq = course_info[line + 1]
-                                course.set_prerequisite(create_prerequisite(prereq))
+                                # course.set_prerequisite(create_prerequisite(prereq))
                                 break
 
                         # check if row contains course info
-                        self.add_course(course)
-                        course.print_course()
+                        # self.add_course(course)
+                        # course.print_course()
 
                     except IndexError:
                         break
@@ -89,9 +108,7 @@ class CourseDatabase:
             except (NoSuchElementException, TimeoutException) as e:
                 pass
 
-
         driver.quit()
-
 
     def add_course(self, course):
         self.table[course.get_course_num()] = course
@@ -105,9 +122,6 @@ class CourseDatabase:
         """
         if self.table.get(code):
             return self.table[code]
-
-
-
 
 
 def subject_code(s):
