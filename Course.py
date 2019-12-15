@@ -41,7 +41,7 @@ class Course:
         :param pq:
         :return:
         """
-        self.prereq = pq
+        self.prereqs = pq
 
     # getting functions
     def get_course_num(self):
@@ -70,7 +70,7 @@ class Course:
 
         :return:
         """
-        return self.prereq
+        return self.prereqs
 
     def generate_prereqs(self):
         pass

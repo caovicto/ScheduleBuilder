@@ -1,5 +1,8 @@
 import re
+import time
+
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -12,54 +15,83 @@ from LineParsers import *
 # Parsing Information from pdf lines
 #######################################################
 class CourseDatabase:
-    def __init__(self, c_code):
-        self.c_code = c_code
+    def __init__(self):
         self.table = {}
+        self.added_subjects = {}
 
+    def retrieve_courses(self):
+        # entering driver information
         url = 'https://reg.msu.edu/Courses/Search.aspx'
         driver = webdriver.Chrome(executable_path="/usr/lib/chromium-browser/chromedriver")
         driver.get(url)
 
-        select = "//select[@id='MainContent_ddlSubjectCode']/option[@value='" + c_code + "']"
-        driver.find_element_by_xpath(select).click()
+        selections = driver.find_element_by_id("MainContent_ddlSubjectCode")
+        options = [x for x in selections.find_elements_by_tag_name("option")]
+        driver.set_script_timeout(300)
 
-        driver.find_element_by_xpath("//input[@id='MainContent_btnSubmit']").click()
+        for i in range(1, len(options)):
+            subject_element = options[i]
+            subject = subject_element.get_attribute("value")
 
-        try:
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.ID, "MainContent_divSearchResults"))
-            )
+            try:
+                # selecting subject code
+                # select = "//select[@id='MainContent_ddlSubjectCode']/option[@value='" + subject + "']"
+                subject_element.click()
 
-            course_name = driver.find_elements_by_xpath("//h3")
-            info = driver.find_elements_by_xpath(
-                "//div[starts-with(@id, 'MainContent_rptrSearchResults_divMainDetails_')]")
+                # submission
+                driver.find_element_by_xpath("//input[@id='MainContent_btnSubmit']").click()
 
-            for i in range(len(course_name)):
-                course_info = info[i].text.split('\n')
 
-                # start
-                course = Course()
+                WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.ID, "MainContent_divSearchResults"))
+                )
+                WebDriverWait(driver, 10).until(
+                    EC.text_to_be_present_in_element((By.XPATH, '//h3'), subject)
+                )
 
-                course.set_course_num(find_c_info(course_name[i].text, c_code)[0])
-                course.set_name(find_c_info(course_name[i].text, c_code)[1])
+                # scraping information
+                course_name = driver.find_elements_by_xpath("//h3")
+                info = driver.find_elements_by_xpath(
+                    "//div[starts-with(@id, 'MainContent_rptrSearchResults_divMainDetails_')]")
 
-                # check if credits
-                for line in range(len(course_info)):
-                    # print(course_info[line])
-                    if find_credit(course_info[line]):
-                        course.set_credits(find_credit(course_info[line]))
+                # Creating course infromation
+                for i in range(len(course_name)):
+                    try:
+                        course_info = info[i].text.split('\n')
+                        heading = course_name[i].text.split()
 
-                    if find_prerequisite(course_info[line]):
-                        prereq = course_info[line + 1]
-                        course.set_prerequisite(create_prerequisite(prereq))
+                        # print(heading)
+                        # print(course_info)
+
+                        # start
+                        course = Course()
+                        course.set_course_num(' '.join(heading[0:2]))
+                        course.set_name(' '.join(heading[2:]))
+
+                        # check if credits
+                        for line in range(len(course_info)):
+                            # print(course_info[line])
+                            if find_credit(course_info[line]):
+                                course.set_credits(find_credit(course_info[line]))
+
+                            if find_prerequisite(course_info[line]):
+                                prereq = course_info[line + 1]
+                                course.set_prerequisite(create_prerequisite(prereq))
+                                break
+
+                        # check if row contains course info
+                        self.add_course(course)
+                        course.print_course()
+
+                    except IndexError:
                         break
 
-                # check if row contains course info
-                self.add_course(course)
-                course.print_course()
+            except (NoSuchElementException, TimeoutException) as e:
+                pass
 
-        finally:
-            driver.quit()
+
+        driver.quit()
+
 
     def add_course(self, course):
         self.table[course.get_course_num()] = course
@@ -67,11 +99,28 @@ class CourseDatabase:
     def get_table(self):
         return self.table
 
-    def get_course(self, num):
-        return self.table[num]
+    def get_course(self, code):
+        """
+        Gets course item from course database
+        """
+        if self.table.get(code):
+            return self.table[code]
 
 
-def find_c_info(line, c_code):
+
+
+
+def subject_code(s):
+    code = ""
+    for letter in s:
+        if is_int(letter):
+            break
+        code += letter
+
+    return code
+
+
+def find_c_info(line):
     """
     if line contains course code, 3 digit number. and full course name, return pair of course code and name
     :param line: line to parse
@@ -79,8 +128,7 @@ def find_c_info(line, c_code):
     :return: <pair>(course code, name)
     """
     first_word = find_successor(line, int_present(line))
-    if line.find(c_code) == 0 and int_present(line) and first_word and first_word[0].isupper():
-        return c_code + int_present(line), line[line.find(first_word):]
+    return line[:line.find(first_word)], line[line.find(first_word):]
 
 
 def find_credit(line):

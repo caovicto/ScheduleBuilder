@@ -9,9 +9,11 @@ from LineParsers import *
 
 class Major:
     class Requirement:
-        def __init__(self, req_number):
+        def __init__(self):
+            """
+            :param req_number:
+            """
             self.completed = False
-            self.req_number = req_number
             self.req_list = []
 
         def set_completed(self):
@@ -23,6 +25,14 @@ class Major:
         def print_requirements(self):
             for ele in self.req_list:
                 print(ele.number, ele.type_choice, "from", ele.choices)
+
+        def get_courses(self):
+            l_courses = []
+            for ele in self.req_list:
+                for course in ele.choices:
+                    l_courses.append(course)
+
+            return l_courses
 
         def __str__(self):
             s = ""
@@ -42,7 +52,9 @@ class Major:
         self.name = n
         self.credits = 0
 
+        # initialize ang get requirements for major
         self.requirements = []
+
         self.alias = []
 
     def get_number(self):
@@ -88,6 +100,15 @@ class Major:
 
         driver.close()
 
+
+    def list_classes(self):
+        ret_list = []
+        for req in self.requirements:
+            for course in req.get_courses(): # for list of choices in req
+                ret_list.append(course)
+
+        return ret_list
+
     def print_major(self):
         print(self.name)
 
@@ -107,13 +128,25 @@ class MajorDatabase:
             self.add_major(m)
 
     def add_major(self, major):
+        """
+        Adds major name as key, major object as value
+        :param major: Major Object
+        """
         name = major.name
 
         if not self.table.get(name):
             self.table[name] = major
 
     def get_major(self, major_name):
-        return self.table.get(major_name)
+        """
+        Grabs all requirement information from major
+        """
+        if self.table.get(major_name):
+            major = self.table.get(major_name)
+            major.get_requirements()
+
+            return major
+
 
     def print_database(self):
         print(self.table)
