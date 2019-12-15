@@ -1,10 +1,12 @@
-from PriorityHeap import *
+from Utilities.PriorityHeap import *
 from Course import *
-from CourseDatabase import *
 
 class Graph:
     class Vertex:
         def __init__(self, item):
+            """
+            :param item: (Course) course item
+            """
             self.item = item
 
             self.in_edges = {}
@@ -14,7 +16,6 @@ class Graph:
             self.num_out = 0
 
             # retrieve information from items
-
 
         def get_item(self):
             """
@@ -116,7 +117,6 @@ class Graph:
 
     def __init__(self):
         self.vertex_list = {}
-        self.courseDriver = CourseDatabase()
 
     def all_vertices(self):
         """
@@ -140,9 +140,7 @@ class Graph:
         """
 
         """
-        for ele in course:
-            c_vertex = Graph.Vertex(self.courseDriver.get_course(ele))
-            self.vertex_list[course] = c_vertex
+        pass
 
 
 def TopologicalSort(g):

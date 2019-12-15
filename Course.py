@@ -1,55 +1,39 @@
+from Utilities.LineParsers import *
+
+
 class Course:
-    def __init__(self, c_num = "", name = "", cred=0, pr=[]):
-        self.course_num = c_num
+    def __init__(self, code, name, sem, cred, prereqs):
+        self.code = code
         self.name = name
+        self.semester = sem
         self.credits = cred
 
-        self.pr_arith = pr
-        self.prereqs = []
-        self.postreqs = []
+        self.prereq_string = prereqs
+        self.prerequisites = []
+        self.create_prerequisite(prereqs)
 
         self.completed = False
 
-    # setting functions
-    def set_course_num(self, c_num):
+        # printing
+
+    def __str__(self):
         """
 
-        :param c_num:
         :return:
         """
-        self.course_num = c_num
+        c_string = self.get_code() + ": " + self.get_name()
+        c_string += "\nCredits: " + self.get_credits()
+        c_string += "\nPrerequisites: " + self.prereq_string
 
-    def set_name(self, new_name):
-        """
-
-        :param new_name:
-        :return:
-        """
-        self.name = new_name
-
-    def set_credits(self, new_credits):
-        """
-
-        :param new_credits:
-        :return:
-        """
-        self.credits = new_credits
-
-    def set_prerequisite(self, pq):
-        """
-
-        :param pq:
-        :return:
-        """
-        self.prereqs = pq
+        return c_string
 
     # getting functions
-    def get_course_num(self):
+    def get_code(self):
         """
 
         :return:
         """
-        return self.course_num
+        return self.code
 
     def get_name(self):
         """
@@ -70,10 +54,7 @@ class Course:
 
         :return:
         """
-        return self.prereqs
-
-    def generate_prereqs(self):
-        pass
+        return self.prerequisites
 
     # information completion
     def set_complete(self):
@@ -83,13 +64,29 @@ class Course:
         """
         self.completed = True
 
-    # printing
-    def print_course(self):
-        """
+    # helper functions
+    def create_prerequisite(self, line):
+        parsed_line = re.findall(r"[\w]+|[()]", line)
+        s_arith = []
 
-        :return:
-        """
-        print(self.get_course_num(), ": ", self.get_name())
-        print("Credits: ", self.get_credits())
-        print("Prerequisites: ", self.get_prerequisite())
+        i = 0
+        while i < len(parsed_line):
+            if parsed_line[i] in ["and", "or", "("]:
+                s_arith.append(parsed_line[i])
+
+            elif parsed_line[i] == ")":
+                popped = s_arith.pop()
+                while popped != "(":
+                    self.prerequisites.append(popped)
+                    popped = s_arith.pop()
+
+            else:
+                c = combine_course(i, parsed_line)
+                self.prerequisites.append(c[0])
+                i = c[1] - 1
+
+            i += 1
+
+        while s_arith:
+            self.prerequisites.append(s_arith.pop())
 

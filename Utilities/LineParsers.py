@@ -143,40 +143,6 @@ def find_prerequisite(line):
     if line.find("Prerequisite") != -1:
         return True
 
-
-################################################
-# CourseDatabase 
-###############################################
-
-def create_prerequisite(line):
-    parsed_line = re.findall(r"[\w]+|[()]", line)
-    s_arith = []
-    expression = []
-
-    i = 0
-    while i < len(parsed_line):
-        if parsed_line[i] in ["and", "or", "("]:
-            s_arith.append(parsed_line[i])
-
-        elif parsed_line[i] == ")":
-            popped = s_arith.pop()
-            while popped != "(":
-                expression.append(popped)
-                popped = s_arith.pop()
-
-        else:
-            c = combine_course(i, parsed_line)
-            expression.append(c[0])
-            i = c[1] - 1
-
-        i += 1
-
-    while s_arith:
-        expression.append(s_arith.pop())
-
-    return expression
-
-
 def combine_course(index, parsed_line):
     """
 
@@ -190,7 +156,6 @@ def combine_course(index, parsed_line):
         index += 1
 
     return s[:len(s) - 1], index
-
 
 ####################################
 #    CHAR FUNCTIONS
