@@ -2,6 +2,71 @@ from Utilities.LineParsers import *
 
 
 class Course:
+    class Prerequisite:
+        def __init__(self, courses):
+            self.courses = []
+            self.completed = False
+
+            self.create_prerequisite()
+
+        def completed_course(self, code):
+            pass
+
+        # helper functions
+        def create_prerequisite(self, line):
+            parsed_line = re.findall(r"[\w]+|[()]", line)
+            s_arith = []
+
+            i = 0
+            while i < len(parsed_line):
+                if parsed_line[i] in ["and", "or", "("]:
+                    s_arith.append(parsed_line[i])
+
+                elif parsed_line[i] == ")":
+                    popped = s_arith.pop()
+                    while popped != "(":
+                        self.courses.append(popped)
+                        popped = s_arith.pop()
+
+                else:
+                    c = combine_course(i, parsed_line)
+                    self.courses.append(c[0])
+                    i = c[1] - 1
+
+                i += 1
+
+            while s_arith:
+                self.courses.append(s_arith.pop())
+
+            # create in 
+            self.rearrange_prereq()
+
+        def rearrange_prereq(self):
+            stack = []
+            for ele in self.courses:
+                if ele == "and":
+                    first = stack.pop()
+                    second = stack.pop()
+                    if is_ands(first) and type(second) is str:
+                        first.append([second])
+                        stack.append(first)
+                    else:
+                        stack.append([[first], [second]])
+
+                elif ele == "or":
+                    first = stack.pop()
+                    second = stack.pop()
+                    if is_ors(first) and type(second) is str:
+                        first.append(second)
+                        stack.append(first)
+                    else:
+                        stack.append([first, second])
+
+                else:
+                    stack.append(ele)
+
+            self.courses = stack[0]
+
     def __init__(self, code, name, sem, cred, prereqs):
         self.code = code
         self.name = name
@@ -9,13 +74,9 @@ class Course:
         self.credits = cred
 
         self.prereq_string = prereqs
-        self.prerequisites = []
-        self.create_prerequisite(prereqs)
+        self.prerequisites = Course.Prerequisite()
 
         self.completed = False
-
-        self.rearrange_prereq()
-        print(self.prerequisites)
 
     def __str__(self):
         """
@@ -65,60 +126,8 @@ class Course:
         """
         self.completed = True
 
-    # helper functions
-    def create_prerequisite(self, line):
-        parsed_line = re.findall(r"[\w]+|[()]", line)
-        s_arith = []
 
-        i = 0
-        while i < len(parsed_line):
-            if parsed_line[i] in ["and", "or", "("]:
-                s_arith.append(parsed_line[i])
 
-            elif parsed_line[i] == ")":
-                popped = s_arith.pop()
-                while popped != "(":
-                    self.prerequisites.append(popped)
-                    popped = s_arith.pop()
-
-            else:
-                c = combine_course(i, parsed_line)
-                self.prerequisites.append(c[0])
-                i = c[1] - 1
-
-            i += 1
-
-        while s_arith:
-            self.prerequisites.append(s_arith.pop())
-
-        # self.remove_duplicates()
-
-    def rearrange_prereq(self):
-        stack = []
-        for ele in self.prerequisites:
-            if ele == "and":
-                first = stack.pop()
-                second = stack.pop()
-                if is_ands(first) and type(second) is str:
-                    first.append([second])
-                    stack.append(first)
-                else:
-                    stack.append([[first], [second]])
-
-            elif ele == "or":
-                first = stack.pop()
-                second = stack.pop()
-                if is_ors(first) and type(second) is str:
-                    first.append(second)
-                    stack.append(first)
-                else:
-                    stack.append([first, second])
-
-            else:
-                stack.append(ele)
-
-        self.prerequisites = stack[0]
-        
 
 def is_ors(l):
     if type(l) is list:
@@ -129,6 +138,7 @@ def is_ors(l):
         return True
 
     return False
+
 
 def is_ands(l):
     if type(l) is list:

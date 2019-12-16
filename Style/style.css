@@ -1,0 +1,72 @@
+/* Font */
+@font-face{
+    font-family: Bebas;
+    src: url(Fonts/BebasNeue-Regular.ttf);
+}
+
+/* all */
+body {
+    font-family: Bebas;
+    margin: 0;
+}
+
+
+/***************** Navigator Bar ********************/
+head{
+    font-family: Bebas;
+    margin: 0;
+    padding: 0;
+}
+
+/* ul */
+#nav{
+    /* font-family: bebas; */
+    font-size: larger;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* li */
+#home{
+    float: left;
+    text-align: center;
+}
+
+#subpage{
+    float: right;
+    text-align: center;
+}
+
+/* a */
+#toptext{
+    text-decoration: None;
+    color: aliceblue;
+    display: block;
+    padding: 14px 16px;
+}
+#toptext:hover{
+    background-color: aliceblue;
+    color: #333;
+}
+
+
+/******************** Course Plan *********************/
+#course_plan_page_container{
+    padding: 20px 20px;
+    width: 100%;
+    height: 400px
+}
+
+#left_container{
+    width: 50%;
+    float: left;
+}
+
+#div_padding{
+    padding: 40px 20px;
+    display: block;
+}

@@ -62,9 +62,21 @@ All responses will have the form
     "prerequisites": "courses that must be completed previous to taking course"
 
 }
+'''
 
 ### Delete a course
 **Definition**
 'DELETE /courses/<identifier>'
 **Response**
 -
+
+
+### Student information
+**Arguments**
+'''json{
+    "major": list of strings majors
+    "minor": list of strings miniors
+    "completed_courses": list of strings completed courses
+    "sem": semesters left
+}
+'''
