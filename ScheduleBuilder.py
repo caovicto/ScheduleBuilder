@@ -1,4 +1,5 @@
 from Student import *
 from CourseDatabase import *
 
-Suj = Student(["Journalism"])
+Suj = Student(["Journalism"], ["Chinese"])
+Suj.TopologicalSort()

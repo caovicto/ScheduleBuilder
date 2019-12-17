@@ -5,7 +5,7 @@ from CourseDatabase import *
 
 class Graph:
     class Vertex:
-        def __init__(self, item):
+        def __init__(self, course):
             """
             self.item: (Course) course object
             self.in_edges: (dict<edges>) list of incoming edges
@@ -13,7 +13,7 @@ class Graph:
             self.out_edges: (dict<edges>) list of outgoing edges
             self.num_out: (int) number of outgoing edges
             """
-            self.item = item
+            self.course = course
 
             self.in_edges = {}
             self.num_in = 0
@@ -23,11 +23,11 @@ class Graph:
 
             # retrieve information from items
 
-        def get_item(self):
+        def get_code(self):
             """
 
             """
-            return self.item
+            return self.course.get_code()
 
         ##############################
         #     IN EDGE FUNCTIONS
@@ -51,9 +51,9 @@ class Graph:
 
         def add_in_edge(self, edge):
             """
-
+            :param edge: (Edge) edge to add to list
             """
-            if isinstance(edge, Graph.Edge) and not self.in_edges.get(edge.get_source()):
+            if self.in_edges.get(edge.get_source()) is None:
                 self.in_edges[edge.get_source()] = edge
                 self.num_in += 1
 
@@ -61,7 +61,7 @@ class Graph:
             """
 
             """
-            if isinstance(edge, Graph.Edge) and not self.in_edges.get(edge.get_source()):
+            if self.in_edges.get(edge.get_source()):
                 del self.in_edges[edge.get_source()]
                 self.num_in -= 1
 
@@ -143,41 +143,28 @@ class Graph:
 
         return temp
 
-    def add_vertex(self, v):
+    def get_vertex(self, code):
+        return self.vertex_list.get(code)
+
+    def add_to_graph(self, code):
         """
-
+        :param code: (string) code for course
         """
-        if isinstance(v, Graph.Vertex) and not self.vertex_list.get(v.get_item()):
-            del self.vertex_list[v.get_item()]
+        if code and self.get_vertex(code) is None:
+            new_course = self.courseDB.get_course(code)
+            if new_course:
+                new_vert = Graph.Vertex(new_course)
+                # add new vertex to list
+                self.vertex_list[code] = new_vert
 
-    def add_to_graph(self, course):
-        """
+                for ele in new_course.get_list_prerequisites():
+                    prereq_edge = Graph.Edge(ele, code)
+                    new_vert.add_in_edge(prereq_edge)
+                    self.add_to_graph(ele)
 
-        """
-
-
-
-def TopologicalSort(g):
-    """
-
-    """
-    copy_g = g
-    heap = PriorityHeap()
-    for ele in copy_g.all_vertices():
-        heap.push(ele.in_num(), ele)
-
-
-def remove_top(heap):
-    """
-
-    """
-    num_zero = heap.all_mins()
-
-    for i in range(num_zero):
-        popped = heap.pop()
-        # remove in edge incident from out edge destination
-        for ele in popped.all_out_edges():
-            dest = ele.get_dest()
-            dest.delete_in_edge(popped)
-
-            heap.change_priority()
+    def update_all_edges(self):
+        # for all vertex items in list
+        for dest in self.vertex_list.values():
+            for src in dest.all_in_edges():
+                vert = self.get_vertex(src)
+                vert.add_out_edge(Graph.Edge(src, dest.get_code()))

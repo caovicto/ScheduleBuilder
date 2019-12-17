@@ -12,7 +12,7 @@ def find_total_credits(line):
             return int(words[i + 1])
 
 
-def find_all_codes(line):
+def find_all_code_requirement(line):
     """
 
     :param line:
@@ -43,6 +43,45 @@ def find_all_codes(line):
                 num = int(parsed[i + 1])
 
     return num, t_string, l_courses
+
+
+def combine_text(line):
+    """
+    Used in
+    """
+    new_line = []
+
+    for i in range(len(line)):
+        if line[i].lower() == "designated":
+            new_line.append(' '.join(line[i:line.index("test")]))
+
+        else:
+            new_line.append(line[i])
+
+    return new_line
+
+def get_all_courses(line):
+    """
+    returns list of all raw courses in line
+    :param line: (string) line to find courses in
+    [Course.py]
+    """
+    ret_array = []
+    line = line.translate(str.maketrans('', '', string.punctuation))
+    parsed = line.split()
+
+    for i in range(len(parsed)):
+        if parsed[i].isupper() and len(parsed[i]) >1:
+            try:
+                ret_array.append(parsed[i]+parsed[i+1])
+            except IndexError:
+                pass
+            i += 1
+
+    return ret_array
+
+
+
 
 
 def remove_titles(paragraph):

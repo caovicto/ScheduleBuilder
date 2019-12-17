@@ -248,3 +248,15 @@ class PriorityHeap:
         :return:
         """
         self._data[x], self._data[y] = self._data[y], self._data[x]
+
+    def remove_top(self):
+        """
+
+        """
+        popped = self.pop()
+        # remove in edge incident from out edge destination
+        for ele in popped.all_out_edges():
+            dest = ele.get_dest()
+            dest.delete_in_edge(popped)
+
+            self.change_priority()

@@ -113,6 +113,15 @@ class ProgramDatabase:
             print("\nTABLE: ", ele[0], "\n")
             self.list_elements_in_table(ele[0])
 
+    def get_majors(self):
+        """
+        Lists all elements within Database
+        """
+        self.cur.execute("SELECT name FROM Major")
+        ele = self.fetchone()
+        for i in ele:
+            print(ele)
+
 
     def get_program(self, p_name, p_type):
         """

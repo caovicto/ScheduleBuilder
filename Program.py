@@ -1,6 +1,7 @@
 from selenium import webdriver
 
 from Utilities.LineParsers import *
+from CourseDatabase import *
 
 
 class Program:
@@ -68,6 +69,12 @@ class Program:
 
         self.alias = []
 
+    def __str__(self):
+        s = "Program " + self.program_number + ": " + self.program_name + " " + self.program_type
+        s += "\nCredits: " + str(self.credits)
+
+        return s
+
     def initialize_requirements(self):
         """
         Get requirements for program
@@ -99,7 +106,7 @@ class Program:
                 # print(raw_courses, '\n')
 
                 for row in raw_courses:
-                    info = find_all_codes(row)
+                    info = find_all_code_requirement(row)
 
                     if len(info[2]) != 0 and info[0] != 0:
                         new_req = self.ReqSet(info[0], info[1], info[2])
@@ -127,4 +134,28 @@ class Program:
         """
         for req in self.requirements:
             req.print_requirements()
+
+
+    def list_possible_classes(self):
+        courseDB = CourseDatabase()
+        ret_list = []
+
+        for req in self.requirements:
+            for sub_req in req.req_list:
+                # add number of courses
+                if sub_req.type_choice == "course":
+                    ret_list.extend(sub_req.choices[0:sub_req.number])
+                # add up to total number of credits
+                else:
+                    cred = 0
+                    for ele in sub_req.choices:
+                        if cred > sub_req.number:
+                            break
+
+                        c = courseDB.get_course(ele)
+                        if c:
+                            cred += (c.credit_lb()+c.credit_ub())/2
+                            ret_list.append(ele)
+
+        return ret_list
 

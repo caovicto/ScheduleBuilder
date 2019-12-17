@@ -189,13 +189,13 @@ class CourseDatabase:
         table = "c"+subject_code(code)
         course_id = subject_id(code)
 
+        # get course from database
         try:
             self.cur.execute("SELECT Cid, name, semester, credits, prerequisites FROM " + table +
                              " WHERE Cid='" + course_id + "'")
             ele = self.cur.fetchone()
-            print(ele)
-
-            return Course(code, ele[1], ele[2], ele[3], ele[4])
+            if ele:
+                return Course(code, ele[1], ele[2], ele[3], ele[4])
 
         except sqlite3.OperationalError:
             return None
