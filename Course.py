@@ -9,23 +9,16 @@ class Course:
             self.completed: (bool) if self.courses is all True
             """
             self.courses = []
+            self.create_prerequisite(prereq_sentence)  # changes self.courses into parsable format
             self.raw_courses = get_all_courses(prereq_sentence)
-            self.completed = False
 
-            # changes self.courses into parsable format
-            self.create_prerequisite(prereq_sentence)
+            self.course_arith = self.courses
 
         def all_possible_courses(self):
             return self.raw_courses
 
         def get_courses(self):
             return self.courses
-
-        def complete_course(self, code):
-            pass
-
-        def are_prereqs_completed(self):
-            pass
 
         # helper functions
         def create_prerequisite(self, line):
@@ -59,38 +52,37 @@ class Course:
             while s_arith:
                 self.courses.append(s_arith.pop())
 
-            # create in
-            self.rearrange_prereq()
 
-        def rearrange_prereq(self):
+        def solve_prereq(self):
             """
             "Solves" post fix course arithmetic
             """
             stack = []
-            for ele in self.courses:
+            for ele in self.course_arith:
                 if ele == "and":
                     first = stack.pop()
                     second = stack.pop()
-                    if type(first) is list and type(first[0]) == type(second):
-                        first.append([second])
+                    if first == 1 and second == 1:
+                        stack.append(1)
                     else:
                         first = [[first], [second]]
-                    stack.append(first)
+                        stack.append(first)
 
                 elif ele == "or":
                     first = stack.pop()
                     second = stack.pop()
-                    if type(first) is list and type(first[0]) == type(second):
-                        first.append(second)
+                    if first == 1 or second == 1:
+                        stack.append(1)
                     else:
                         first = [first, second]
-                    stack.append(first)
-
+                        stack.append(first)
 
                 else:
                     stack.append(ele)
 
-            self.courses = stack[0]
+            if stack[0] == 1:
+                return True
+            return False
 
 
     def __init__(self, code, name, sem, cred, prereqs):
@@ -102,6 +94,8 @@ class Course:
         self.code = code
         self.name = name
         self.semester = sem
+
+        self.completed = False
 
         c_list = cred.split()
         try:
@@ -117,7 +111,6 @@ class Course:
             self.prereq_string = ""
             self.prerequisites = None
 
-        self.completed = False
 
     def __str__(self):
         """
@@ -125,10 +118,25 @@ class Course:
         :return:
         """
         c_string = self.get_code() + ": " + self.get_name()
-        c_string += "\nCredits: " + str(self.get_credits())
+        c_string += "\nCredits: " + str(self.credit_average())
         c_string += "\nPrerequisites: " + self.prereq_string
 
         return c_string
+
+    def complete_prereq(self, code):
+        """
+        :param code:
+        """
+        if self.prerequisites:
+            try:
+                self.prerequisites.course_arith[self.prerequisites.course_arith.index(code)] = 1
+                if self.prerequisites.solve_prereq():
+                    return True
+
+            except ValueError:
+                pass
+
+        return False
 
     # getting functions
     def get_code(self):
@@ -159,6 +167,12 @@ class Course:
         """
         return self.credits[1]
 
+    def credit_average(self):
+        """
+        :return: average credits for course
+        """
+        return (self.credits[0]+self.credits[1])/2
+
     def get_prerequisite(self):
         """
 
@@ -176,13 +190,9 @@ class Course:
 
         return []
 
-    # information completion
-    def set_complete(self):
-        """
-
-        :return:
-        """
+    def complete(self):
         self.completed = True
+
 
 
 

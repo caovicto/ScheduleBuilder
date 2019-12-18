@@ -158,7 +158,7 @@ class PriorityHeap:
             # move swapped node to correct place
             self.percolate_down(0)
 
-            return popped
+            return popped.get_value()
         # if empty
         return None
 
@@ -249,6 +249,11 @@ class PriorityHeap:
         """
         self._data[x], self._data[y] = self._data[y], self._data[x]
 
+    def find_index(self, vertex):
+        for i in range(len(self._data)):
+            if self._data[i].get_value() == vertex:
+                return i
+
     def remove_top(self):
         """
 
@@ -257,6 +262,8 @@ class PriorityHeap:
         # remove in edge incident from out edge destination
         for ele in popped.all_out_edges():
             dest = ele.get_dest()
-            dest.delete_in_edge(popped)
-
-            self.change_priority()
+            # dest.delete_in_edge(popped)
+            #
+            # self.change_priority()
+            #
+        return popped.get_value()

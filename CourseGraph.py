@@ -23,6 +23,12 @@ class Graph:
 
             # retrieve information from items
 
+        def __gt__(self, other):
+            return self.course.get_code() > other.course.get_code()
+
+        def __lt__(self, other):
+            return self.course.get_code() < other.course.get_code()
+
         def get_code(self):
             """
 
@@ -62,8 +68,16 @@ class Graph:
 
             """
             if self.in_edges.get(edge.get_source()):
-                del self.in_edges[edge.get_source()]
-                self.num_in -= 1
+                # set prereq as complete, if completed all prereqs, set prereq as complete
+                if self.course.complete_prereq(edge.get_source()):
+                    del self.in_edges[edge.get_source()]
+                    self.num_in = 0
+
+                else:
+                    del self.in_edges[edge.get_source()]
+                    self.num_in -= 1
+
+
 
         ##############################
         #     OUT EDGE FUNCTIONS
@@ -137,7 +151,7 @@ class Graph:
 
         """
         temp = []
-        for ele in self.vertex_list:
+        for ele in self.vertex_list.values():
             if ele:
                 temp.append(ele)
 
@@ -167,4 +181,5 @@ class Graph:
         for dest in self.vertex_list.values():
             for src in dest.all_in_edges():
                 vert = self.get_vertex(src)
-                vert.add_out_edge(Graph.Edge(src, dest.get_code()))
+                if vert:
+                    vert.add_out_edge(Graph.Edge(src, dest.get_code()))

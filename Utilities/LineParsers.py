@@ -191,10 +191,10 @@ def combine_course(index, parsed_line):
     """
     s = ""
     while index < len(parsed_line) and parsed_line[index] not in ["and", "or", "(", ")"]:
-        s += parsed_line[index] + " "
+        s += parsed_line[index]
         index += 1
 
-    return s[:len(s) - 1], index
+    return s[:len(s)], index
 
 ####################################
 #    CHAR FUNCTIONS
