@@ -1,0 +1,103 @@
+Proceed to Degree Navigator.
+Required Credits: 136    Program Version: FS19
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: Major - Clinical Laboratory Sciences - Cells and Molecular Biology
+Major - Clinical Laboratory Sciences - Cells and Molecular Biology: 2 courses from BS161, BS171
+Requirement 12: Major - Clinical Laboratory Sciences - Chemistry
+Major - Clinical Laboratory Sciences - Chemistry: 1 course from CEM141
+Requirement 13: Major - Clinical Laboratory Sciences - Chemistry Laboratory
+Major - Clinical Laboratory Sciences - Chemistry Laboratory: 2 courses from CEM161, CEM162
+Requirement 14: Major - Clinical Laboratory Sciences - Organic Chemistry
+Major - Clinical Laboratory Sciences - Organic Chemistry: 2 courses from CEM251, CEM252
+Requirement 15: Major - Clinical Laboratory Sciences - Methods and Applications
+Major - Clinical Laboratory Sciences - Methods and Applications: 1 course from CEM333
+Requirement 16: Major - Clinical Laboratory Sciences - Microbiology and Microbiology Laboratory
+Major - Clinical Laboratory Sciences - Microbiology and Microbiology Laboratory: 2 courses from MMG463, MMG464
+Requirement 17: Major - Clinical Laboratory Sciences - Physics
+Major - Clinical Laboratory Sciences - Physics: 2 courses from PHY231, PHY232
+Requirement 18: Major - Clinical Laboratory Sciences - Biochemistry
+Major - Clinical Laboratory Sciences - Biochemistry: The required number of courses from 1 of the following sets of courses
+1 course from BMB401
+2 courses from BMB461, BMB462
+Requirement 19: Major - Clinical Laboratory Sciences - Physiology
+Major - Clinical Laboratory Sciences - Physiology: The required number of courses from 1 of the following sets of courses
+1 course from PSL250
+1 course from PSL310
+2 courses from PSL431, PSL432
+Requirement 20: Major - Clinical Laboratory Sciences - Mechanisms of Disease
+Major - Clinical Laboratory Sciences - Mechanisms of Disease: 1 course from BLD204
+Requirement 21: Major - Clinical Laboratory Sciences - Microbiology
+Major - Clinical Laboratory Sciences - Microbiology: 1 course from MMG201, MMG301
+Requirement 22: Major - Clinical Laboratory Sciences - Principles
+Major - Clinical Laboratory Sciences - Principles: 1 course from BLD213
+Requirement 23: Major - Clinical Laboratory Sciences - Hematology
+Major - Clinical Laboratory Sciences - Hematology: 6 courses from BLD324, BLD324L, BLD424, BLD424L, BLD473, BLD474
+Requirement 24: Major - Clinical Laboratory Sciences - Core
+Major - Clinical Laboratory Sciences - Core: 6 courses from BLD220, BLD417, BLD430, BLD435, BLD442, BLD450
+Requirement 25: Major - Clinical Laboratory Sciences - Tier II Writing
+Major - Clinical Laboratory Sciences - Tier II Writing: 1 course from BLD455
+Requirement 26: Major - Clinical Laboratory Sciences - Immunology
+Major - Clinical Laboratory Sciences - Immunology: 4 courses from BLD433, BLD434, BLD475, BLD476
+Requirement 27: Major - Clinical Laboratory Sciences - Clinical Chemistry
+Major - Clinical Laboratory Sciences - Clinical Chemistry: 3 courses from BLD416, BLD471, BLD472
+Requirement 28: Major - Clinical Laboratory Sciences - Advanced Microbiology
+Major - Clinical Laboratory Sciences - Advanced Microbiology: 2 courses from BLD477, BLD478
+Requirement 29: Major - Clinical Laboratory Sciences - Clinical Laboratory Science
+Major - Clinical Laboratory Sciences - Clinical Laboratory Science: 1 course from BLD498
+Requirement 30: Major - Clinical Laboratory Sciences - Infectious Disease Diagnostic Lab
+Major - Clinical Laboratory Sciences - Infectious Disease Diagnostic Lab: 1 course from BLD498L
+Requirement 31: Major - Clinical Laboratory Sciences - Calculus
+Major - Clinical Laboratory Sciences - Calculus: 1 course from MTH124, MTH132
+Requirement 32: Major - Clinical Laboratory Sciences - Statistics
+Major - Clinical Laboratory Sciences - Statistics: 1 course from STT200, STT201, STT231, STT351, STT421
+Requirement 33: Major Distribution
+Major Distribution: 76 credits from Clinical Laboratory Sciences courses
+Requirement 34: College Distribution
+College Distribution: 30 credits from courses numbered at the 300 and 400 levels. See academic advisor.
+Requirement 35: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 36: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.
+Requirement 37
+136 credits required to complete this degreeThe specified coursework in this program may not equal this total. The difference must be made up of open options which must be acceptable within the limits of this program. In cases of doubt, please consult an academic advisor.

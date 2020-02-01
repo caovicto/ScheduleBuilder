@@ -1,0 +1,18 @@
+Proceed to Degree Navigator.
+Required Credits: 23    Program Version: FS19
+Requirement 1: Minor - Data Science - Introduction to Data Science
+Minor - Data Science - Introduction to Data Science: 1 course from STT180
+Requirement 2: Minor - Data Science - Introduction to Computational Modeling and Data Analysis
+Minor - Data Science - Introduction to Computational Modeling and Data Analysis: 1 course from CMSE201
+Requirement 3: Minor - Data Science - Computational Modeling Tools and Techniques
+Minor - Data Science - Computational Modeling Tools and Techniques: 1 course from CMSE202
+Requirement 4: Minor - Data Science - Fundamentals of Data Science Methods
+Minor - Data Science - Fundamentals of Data Science Methods: 1 course from CMSE381
+Requirement 5: Minor - Data Science - Matrix Algebra with Computational Applications
+Minor - Data Science - Matrix Algebra with Computational Applications: 1 course from MTH314
+Requirement 6: Minor - Data Science - Statistics
+Minor - Data Science - Statistics: The required number of courses from 1 of the following sets of courses
+1 course from STT380
+2 courses from STT441, STT442
+Requirement 7
+23 credits required to complete this degreeThe specified coursework in this program may not equal this total. The difference must be made up of open options which must be acceptable within the limits of this program. In cases of doubt, please consult an academic advisor.

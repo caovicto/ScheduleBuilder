@@ -1,0 +1,188 @@
+AAAS    African American and African Studies
+AAE      Advanced Academic English
+ABM      Agribusiness Management
+ACC      Accounting
+ACM      Arts and Cultural Management
+ADV      Advertising
+AE         Agricultural Engineering
+AESC    Applied Engineering Sciences
+AFR      African Languages
+AFRE    Agricultural, Food, and Resource Economics
+AIIS    American Indian and Indigenous Studies
+AL         Arts and Letters
+AMS      American Studies
+ANP      Anthropology
+ANR      Agriculture and Natural Resources
+ANS      Animal Science
+ANTR    Human Anatomy
+ARB      Arabic
+AS         Aerospace Studies
+ASN      Asian Languages
+AST      Astronomy and Astrophysics
+AT         Agricultural Technology
+ATD      Apparel and Textile Design
+ATM      Agricultural Technology and Systems Management
+BE         Biosystems Engineering
+BLD      Biomedical Laboratory Diagnostics
+BMB      Biochemistry and Molecular Biology
+BME      Biomedical Engineering
+BMS      BioMolecular Science
+BS         Biological Science
+BUS      Business
+CAS      Communication Arts and Sciences
+CE         Civil Engineering
+CEM      Chemistry
+CEP      Counseling, Educational Psy & Special Education
+CHE      Chemical Engineering
+CHS      Chinese
+CJ         Criminal Justice
+CLA      Classical Studies
+CLS      Chicano/Latino Studies
+CMB      Cell and Molecular Biology
+CMBA    Corporate MBA Program
+CMP      Construction Management Program
+CMSE    Computational Mathematics, Science, & Engineering
+COM      Communication
+CSD      Communicative Sciences and Disorders
+CSE      Computer Science and Engineering
+CSS      Crop and Soil Sciences
+CSUS    Community Sustainability
+DAN      Dance
+DH         Digital Humanities
+EAD      Educational Administration
+EC         Economics
+ECE      Electrical and Computer Engineering
+ED         Education
+EEM      Environmental Economics and Management
+EGR      Engineering
+EM         Emergency Medicine
+EMB      Executive MBA Program
+ENE      Environmental Engineering
+ENG      English
+ENT      Entomology
+EPI      Epidemiology
+ES         Earth Science
+ESHP    Entrepreneurship
+ESL      English As A Second Language
+ESP      Environmental Science and Policy
+FCM      Family and Community Medicine
+FI         Finance
+FIM      Food Industry Management
+FLM      Film Studies
+FLT      Foreign Language Teaching
+FM         Family Medicine
+FOR      Forestry
+FRN      French
+FRS      Forensic Science
+FSC      Food Science
+FW         Fisheries and Wildlife
+GBL      General Business and Business Law
+GD         Graphic Design
+GEN      Genetics
+GEO      Geography
+GLG      Geological Sciences
+GRK      Greek
+GRM      German
+GSAH    Global Studies in the Arts and Humanities
+GUSP    Global Urban Studies Program
+HA         History of Art
+HB         Hospitality Business
+HCM      Healthcare Management
+HDFS    Human Development and Family Studies
+HEB      Hebrew
+HED      Human Environment and Design
+HM         Human Medicine
+HNF      Human Nutrition and Foods
+HRLR    Human Resources and Labor Relations
+HRT      Horticulture
+HST      History
+IAH      Integrative Studies in Arts and Humanities
+IBIO    Integrative Biology
+IDES    Interior Design
+IM         Internal Medicine
+ISB      Integrative Studies in Biological Science
+ISE      Integrated Science Education
+ISP      Integrative Studies in Physical Science
+ISS      Integrative Studies Soc, Behavioral & Ec Sciences
+ITL      Italian
+ITM      Information Technology Management
+JPN      Japanese
+JRN      Journalism
+JS         Jewish Studies
+KIN      Kinesiology
+KOR      Korean
+LA         Landscape Architecture
+LAW      MSU College of Law
+LB         Lyman Briggs
+LCS      Large Animal Clinical Sciences
+LIN      Linguistics
+LL         Linguistics and Languages
+LLT      Language, Learning and Teaching
+LTN      Latin
+LWG      Law Graduate Students
+MBA      Master of Business Administration
+MC         James Madison College
+ME         Mechanical Engineering
+MED      Medicine
+MGT      Management
+MI         Media and Information
+MKT      Marketing
+MMG      Microbiology and Molecular Genetics
+MS         Military Science
+MSE      Materials Science and Engineering
+MTH      Mathematics
+MTHE    Mathematics Education
+MUS      Music
+MUSM    Museum Studies
+NEU      Neuroscience
+NOP      Neurology and Ophthalmology
+NSC      Natural Science
+NUR      Nursing
+OGR      Obstetrics, Gynecology and Reproductive Biology
+OMM      Osteopathic Manipulative Medicine
+OSS      Osteopathic Surgical Specialties
+OST      Osteopathic Medicine
+PDC      Planning, Design and Construction
+PDI      Pathobiology and Diagnostic Investigation
+PED      Pediatrics
+PHD      Pediatrics and Human Development
+PHL      Philosophy
+PHM      Pharmacology and Toxicology
+PHY      Physics
+PIM      Integrative Management
+PKG      Packaging
+PLB      Plant Biology
+PLP      Plant Pathology
+PLS      Political Science
+PMR      Physical Medicine and Rehabilitation
+PPL      Public Policy
+PRT      Portuguese
+PSC      Psychiatry
+PSL      Physiology
+PSY      Psychology
+QB         Quantitative Biology
+RAD      Radiology
+RCAH    Residential College in the Arts and Humanities
+REL      Religious Studies
+RET      Retailing
+ROM      Romance Languages
+RUS      Russian
+SCM      Supply Chain Management
+SCS      Small Animal Clinical Sciences
+SME      Science and Mathematics Education
+SOC      Sociology
+SPN      Spanish
+SSC      Social Science
+STA      Studio Art
+STT      Statistics and Probability
+SUR      Surgery
+SW         Social Work
+TE         Teacher Education
+THR      Theatre
+TSM      Technology Systems Management
+UGS      Undergraduate Studies
+UP         Urban Planning
+VM         Veterinary Medicine
+WRA      Writing, Rhetoric and American Cultures
+WS         Women's Studies
+XA         Experience Architecture

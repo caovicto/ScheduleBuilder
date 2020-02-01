@@ -1,0 +1,101 @@
+Proceed to Degree Navigator.
+Required Credits: 120    Program Version: FS19
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: Major - Environmental Biology/Microbiology - Biochemistry
+Major - Environmental Biology/Microbiology - Biochemistry: The required number of courses from 1 of the following sets of courses
+1 course from BMB401
+2 courses from BMB461, BMB462
+Requirement 12: Major - Environmental Biology/Microbiology - Biology
+Major - Environmental Biology/Microbiology - Biology: 2 courses from BS161, BS162
+Requirement 13: Major - Environmental Biology/Microbiology - Biology Lab
+Major - Environmental Biology/Microbiology - Biology Lab: 1 course from BS171, BS172
+Requirement 14: Major - Environmental Biology/Microbiology - Principles of Environmental Engineering and Science
+Major - Environmental Biology/Microbiology - Principles of Environmental Engineering and Science: 1 course from CE280
+Requirement 15: Major - Environmental Biology/Microbiology - Chemistry and Laboratory
+Major - Environmental Biology/Microbiology - Chemistry and Laboratory: 4 courses from CEM141, CEM142, CEM161, CEM162
+Requirement 16: Major - Environmental Biology/Microbiology - Organic Chemistry and Laboratory
+Major - Environmental Biology/Microbiology - Organic Chemistry and Laboratory: 3 courses from CEM251, CEM252, CEM255
+Requirement 17: Major - Environmental Biology/Microbiology - Soil Science
+Major - Environmental Biology/Microbiology - Soil Science: 1 course from CSS210
+Requirement 18: Major - Environmental Biology/Microbiology - The Dynamic Earth
+Major - Environmental Biology/Microbiology - The Dynamic Earth: 1 course from GLG201
+Requirement 19: Major - Environmental Biology/Microbiology - Environmental Geochemistry
+Major - Environmental Biology/Microbiology - Environmental Geochemistry: 1 course from GLG421
+Requirement 20: Major - Environmental Biology/Microbiology - Math and Statistics
+Major - Environmental Biology/Microbiology - Math and Statistics: 2 courses from MTH132, STT231
+Requirement 21: Major - Environmental Biology/Microbiology - Physics and Laboratory
+Major - Environmental Biology/Microbiology - Physics and Laboratory: 4 courses from PHY231, PHY232, PHY251, PHY252
+Requirement 22: Major - Environmental Biology/Microbiology - Ecology and Laboratory
+Major - Environmental Biology/Microbiology - Ecology and Laboratory: 2 courses from ZOL355, ZOL355L
+Requirement 23: Major - Environmental Biology/Microbiology - Core
+Major - Environmental Biology/Microbiology - Core: 6 courses from MMG301, MMG302, MMG408, MMG421, MMG425, MMG431
+Requirement 24: Major - Environmental Biology/Microbiology - Research
+Major - Environmental Biology/Microbiology - Research: The required number of credits from 1 of the following sets of courses
+3 credits from MMG492, MMG499H
+3 credits from MMG492, MMG499
+3 credits from MMG491
+Requirement 25: Major - Environmental Biology/Microbiology - Required Area
+Major - Environmental Biology/Microbiology - Required Area: The required number of courses from 2 of the following sets of courses
+CSS455: 1 course
+At least 1 course from CSS455
+FOR404: 1 course
+At least 1 course from FOR404
+FSC440: 1 course
+At least 1 course from FSC440
+GEO: 1 course
+At least 1 course from GEO206, GEO221
+MMG426: 1 course
+At least 1 course from MMG426
+MMG445: 1 course
+At least 1 course from MMG445
+ZOL446 and FOR466: 1 course
+At least 1 course from ZOL446, FOR466
+FW420 and FW472: 1 course
+At least 1 course from FW420, FW472
+Requirement 26: College Distribution
+College Distribution: 30 credits from courses numbered at the 300 and 400 levels. See academic advisor.
+Requirement 27: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 28: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.

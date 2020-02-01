@@ -53,7 +53,7 @@ def combine_text(line):
 
     for i in range(len(line)):
         if line[i].lower() == "designated":
-            new_line.append(' '.join(line[i:line.index("test")]))
+            new_line.append(' '.join(line[i:line.index("test")]).lower())
 
         else:
             new_line.append(line[i])
@@ -190,9 +190,14 @@ def combine_course(index, parsed_line):
     :return:
     """
     s = ""
+    start = index
     while index < len(parsed_line) and parsed_line[index] not in ["and", "or", "(", ")"]:
-        s += parsed_line[index]
-        index += 1
+        if contains_int(parsed_line[index]) or parsed_line[index].isupper():
+            s += parsed_line[index]
+            index += 1
+        else:
+            s = ' '.join(parsed_line[start:index+1])
+            index += 1
 
     return s[:len(s)], index
 

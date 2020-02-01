@@ -1,0 +1,115 @@
+Proceed to Degree Navigator.
+Required Credits: 120    Program Version: FS19
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: Major - International Relations - International Relations I and II
+Major - International Relations - International Relations I and II: 2 courses from MC220, MC221
+Requirement 12: Major - International Relations - Senior Seminar
+Major - International Relations - Senior Seminar: 5 credits from MC492
+Requirement 13: Major - International Relations - Economics/Trade/Finance
+Major - International Relations - Economics/Trade/Finance: 1 course from EC340, EC440, EC441
+Requirement 14: Major - International Relations - 1 from 3, Plus 1
+Major - International Relations - 1 from 3, Plus 1: A total 4 courses
+International Political Economy & Global Governance: At least 1 course from FW445, MC320, MC324E, MC361, MC362, MC363, MC390, MC391, MC450, MC395, MC446
+Comparative, Regional and Cultural Studies: At least 1 course from MC320, MC321, MC324A, MC324B, MC324C, MC324D, MC325, MC331, MC332, MC366, MC377, MC385, MC386, MC387, MC390, MC395, MC441, MC482, MC391, PLS358
+Security Studies and Foreign Policy Analysis: At least 1 course from MC321, MC323, MC326, MC327, MC328, MC329, MC390, MC391, MC441, MC482, MC322, MC395, MC318, MC335
+New Perspectives in International Relations: At least 0 courses from FW481, MC272, MC369, MC372, MC376, MC390, MC391, MC395
+Conditions:
+Major - International Relations - 1 from 3, Plus 1: MC390, 391, and 395 may be used for this requirement only when the topic deals with international relations. (Applies to Requirement(s) 14)
+Requirement 15: Major - International Relations - Course A - B Sequence
+Major - International Relations - Course A - B Sequence: The required number of courses from 1 of the following sets of courses
+Group1: 2 courses
+At least 1 course from MC295
+At least 1 course from MC364, PHL330, STT441, MC293
+Group2: 2 courses
+At least 1 course from SOC281
+At least 1 course from MC364, PHL330, SOC282, STT441, MC293
+Group3: 2 courses
+At least 1 course from EC420, MC364, PHL330, STT422, MC293
+At least 1 course from STT421
+Group4: 2 courses
+At least 1 course from EC420
+At least 1 course from MC364, PHL330, STT441, MC293
+Group5: 2 courses
+At least 1 course from STT441
+At least 1 course from STT442, MC364, PHL330, MC293
+Group6: 2 courses
+At least 1 course from MC364, PHL330, MC293
+At least 1 course from PLS201
+Group7: 2 courses
+At least 1 course from STT200, STT201
+At least 1 course from MC364, PHL330, MC293
+Group9: 2 courses
+At least 1 course from EC420, MC364, PHL330, MC293
+At least 1 course from STT315
+group10: 2 courses
+At least 1 course from MC295, PHL330, PLS201, SOC281, STT421, STT441
+At least 1 course from MC293
+Requirement 16: Major - International Relations - Two Related Courses Sequence
+Major - International Relations - Two Related Courses Sequence: A total 2 courses from 1 of the following sets of courses
+MC270, MC271, MC370
+EC302, EC306, EC406, EC410, EC412, EC413, EC414, MC340, MC341
+HST206, HST325, HST326, HST337, HST338, HST390, HST205
+James Madison approved area and courses. See academic advisor.
+Requirement 17: College - James Madison College - Foreign Language
+College - James Madison College - Foreign Language: 1 course from Second year competency in a foreign language. This requirement may be satisfied by placing into a 300 lvl foreign language course based on the MSU placement test.
+Requirement 18: College - James Madison College - Economics
+College - James Madison College - Economics: 2 courses from EC201, EC202
+Requirement 19: College - James Madison College - Field Experience
+College - James Madison College - Field Experience: 2 courses from completing MC400 for 5 or 9 credits and MC401.
+Requirement 20: College - James Madison College - Freshman Writing Program
+College - James Madison College - Freshman Writing Program: 1 course from MC111, MC112
+Requirement 21: College - James Madison College - Public Affairs
+College - James Madison College - Public Affairs: 2 courses from MC201, MC202
+Requirement 22: College - James Madison College - Optional Business Cognate
+College - James Madison College - Optional Business Cognate: A total 0 credits
+At least 0 credits from MC341
+At least 0 credits from ACC230, FI320, GBL323, MGT325, MSC327
+Conditions:
+College - James Madison Requirement: Students may elect to complete a cognate in business. Students may substitue ACC201 and ACC202 for ACC230. (Applies to Requirement(s) 22)
+Requirement 23: James Madison College Distribution
+James Madison College Distribution: 51 credits from MC courses is required for students enrolled in the college as a first-semester freshman. A minimum of 41 credits in MC courses is required for all other students.
+Requirement 24: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 25: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.

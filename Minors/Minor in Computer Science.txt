@@ -1,0 +1,10 @@
+Proceed to Degree Navigator.
+Required Credits: 18    Program Version: FS15
+Requirement 1: Minor - Computer Science - Programming
+Minor - Computer Science - Programming: 2 courses from CSE231, CSE232
+Requirement 2: Minor - Computer Science - Discrete Structures
+Minor - Computer Science - Discrete Structures: 1 course from CSE260
+Requirement 3: Minor - Computer Science - Elective
+Minor - Computer Science - Elective: 2 courses from CSE410, CSE420, CSE422, CSE425, CSE435, CSE440, CSE450, CSE460, CSE471, CSE472, CSE484, CSE320, CSE331, CSE335, CSE473, CSE476, CSE477
+Requirement 4
+18 credits required to complete this degreeThe specified coursework in this program may not equal this total. The difference must be made up of open options which must be acceptable within the limits of this program. In cases of doubt, please consult an academic advisor.

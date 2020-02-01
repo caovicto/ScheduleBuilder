@@ -1,0 +1,87 @@
+Proceed to Degree Navigator.
+Required Credits: 120    Program Version: SS20
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: Major - Kinesiology - Survey - MTH103
+Major - Kinesiology - Survey - MTH103: 1 course from MTH103, MTH103WAIV
+Conditions:
+A minimum grade of 2.0 for CEM141, KIN173, KIN216, MTH103, KIN251, PSL250 in Requirement(s) 11, 12
+Requirement 12: Major - Kinesiology - Survey
+Major - Kinesiology - Survey: 5 courses from CEM141, KIN216, KIN173, KIN251, PSL250
+Conditions:
+A minimum grade of 2.0 for CEM141, KIN173, KIN216, MTH103, KIN251, PSL250 in Requirement(s) 11, 12
+Requirement 13: Major - Kinesiology - Core
+Major - Kinesiology - Core: 6 courses from KIN121, KIN250, KIN310, KIN330, KIN360
+Conditions:
+Major - Kinesiology - Core: A minimum GPA of 2.0000 using KIN121, KIN250, KIN310, KIN330, KIN360 in Requirement(s) 13
+Requirement 14: Major - Kinesiology - Laboratory
+Major - Kinesiology - Laboratory: 1 course from CEM161
+Requirement 15: Major - Kinesiology - Tier II Writing
+Major - Kinesiology - Tier II Writing: 1 course from KIN345, KIN445
+Requirement 16: Major - Kinesiology - Internship
+Major - Kinesiology - Internship: 1 course from KIN492, KIN493, KIN496
+Requirement 17: Major - Kinesiology - Cognate or Approved Minor
+Major - Kinesiology - Cognate or Approved Minor: The required number of credits from 1 of the following sets of courses
+Psycho-Social Aspects of Physical Activity: 12 credits
+At least 12 credits from KIN345, KIN445, KIN371, KIN443, KIN465
+Exercise Physiology: 12 credits
+At least 12 credits from KIN125, KIN217, KIN371, KIN411, KIN465
+Advisor Approved: 12 credits
+At least 12 credits from Advisor Approved Kinesiology Cognate-Please contact Academic Advisor
+Cognitive and Motor Neuroscience: 12 credits
+At least 12 credits from KIN217, KIN365, KIN371, KIN443, KIN465
+Athletic Administration: 12 credits
+At least 12 credits from KIN401, KIN453, KIN454, KIN456
+Athletic Injury and Therapy: 13 credits
+At least 13 credits from KIN126, KIN127, KIN217, KIN320, KIN411, KIN424
+Coaching: 14 credits
+At least 11 credits from KIN400, KIN401, KIN125
+At least 1 credit from Cardiopulmonary Resuscitation (CPR) and First Aid Certification. Students must obtain these two certifications through a reputable source.
+At least 2 credits from approved coaching focus
+Health Promotion: 15 credits
+At least 6 credits from HNF150, PSY320
+At least 9 credits from ANP270, ANP370, CEP260, CEP261, EEM260, EPI390, GEO435, HDFS225, HDFS444, HDFS445, HM101, HNF102, HNF310, HNF385, HNF406, HNF415, HNF457, PHL344, PHL453, PSY333, SOC475
+Requirement 18: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 19: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.

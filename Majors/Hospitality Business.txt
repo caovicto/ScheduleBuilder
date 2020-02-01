@@ -1,0 +1,100 @@
+Proceed to Degree Navigator.
+Required Credits: 120    Program Version: FS19
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Conditions:
+University ISS200 Series: No credits from EC201, EC202, EC251H, EC252H, EC210 in Requirement(s) 5
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: Major - Hospitality Business - HB 105 - Service Management Principles
+Major - Hospitality Business - HB 105 - Service Management Principles: 1 course from HB105
+Requirement 12: Major - Hospitality Business - HB 201 - Professional Development I
+Major - Hospitality Business - HB 201 - Professional Development I: 1 course from HB201
+Requirement 13: Major - Hospitality Business - HB 237 - Management of Lodging Systems
+Major - Hospitality Business - HB 237 - Management of Lodging Systems: 1 course from HB237
+Requirement 14: Major - Hospitality Business - HB 265 - Food Management: Safety and Nutrition
+Major - Hospitality Business - HB 265 - Food Management: Safety and Nutrition: 1 course from HB265
+Requirement 15: Major - Hospitality Business - HB 267 - Management of Food and Beverage Systems
+Major - Hospitality Business - HB 267 - Management of Food and Beverage Systems: 1 course from HB267
+Requirement 16: Major - Hospitality Business - HB 302 - Managerial Accounting
+Major - Hospitality Business - HB 302 - Managerial Accounting: 1 course from HB302, or additional approved courses.
+Requirement 17: Major - Hospitality Business - HB 307 - Human Resources
+Major - Hospitality Business - HB 307 - Human Resources: 1 course from HB307
+Requirement 18: Major - Hospitality Business - HB 311 - Finance
+Major - Hospitality Business - HB 311 - Finance: 1 course from HB311, or additional approved courses.
+Requirement 19: Major - Hospitality Business - HB 337 - Information Systems
+Major - Hospitality Business - HB 337 - Information Systems: 1 course from HB337
+Requirement 20: Major - Hospitality Business - HB 345 - Quantity Food Production Systems
+Major - Hospitality Business - HB 345 - Quantity Food Production Systems: 1 course from HB345
+Requirement 21: Major - Hospitality Business - HB 349 - Facilities Maintenance and Systems
+Major - Hospitality Business - HB 349 - Facilities Maintenance and Systems: 1 course from HB349
+Requirement 22: Major - Hospitality Business - HB 375 - Marketing
+Major - Hospitality Business - HB 375 - Marketing: 1 course from HB375
+Requirement 23: Major - Hospitality Business - HB 447 - Law
+Major - Hospitality Business - HB 447 - Law: 1 course from HB447
+Requirement 24: Major - Hospitality Business - HB 489 - Strategy (W)
+Major - Hospitality Business - HB 489 - Strategy (W): 1 course from HB489
+Requirement 25: Major - Hospitality Business - HB 482, HB 485, HB 486 - Advanced Finance, Foodservice Operations, Marketing
+Major - Hospitality Business - HB 482, HB 485, HB 486 - Advanced Finance, Foodservice Operations, Marketing: 2 courses from HB482, HB485, HB486
+Requirement 26: Major - Hospitality Business - HB International Requirement
+Major - Hospitality Business - HB International Requirement: 1 course from or a language, study abroad course, or other international course as approved by the student's academic advisor (3 to 5 credits)
+Requirement 27: Major - Hospitality Business - HB Specialized Electives
+Major - Hospitality Business - HB Specialized Electives: 12 credits from HB210, HB320, HB321, HB345L, HB347, HB358, HB376, HB380, HB382, HB405, HB409, HB411, HB415, HB420, HB451, HB473, HB490, HB491, HB100, HB437, HB492, additional approved courses.
+Requirement 28: Major Distribution - HB Major Field GPA
+Major Distribution - HB Major Field GPA: 14 courses from Hospitality Business Major Core GPA Requirement
+Requirement 29: College - Business Core - MTH103 - College Algebra
+College - Business Core - MTH103 - College Algebra: 1 course from MTH103, MTH103WAIV, MTHRQMT, additional Mathematics Courses
+Requirement 30: College - Business Core - STT200 or STT201 - Statistical Methods
+College - Business Core - STT200 or STT201 - Statistical Methods: 1 course from STT201, or additional approved Statistics courses
+Requirement 31: College - Business Core - EC201 - Introduction to Microeconomics
+College - Business Core - EC201 - Introduction to Microeconomics: 1 course from EC201
+Requirement 32: College - Business Core - EC202 - Introduction to Macroeconomics
+College - Business Core - EC202 - Introduction to Macroeconomics: 1 course from EC202
+Requirement 33: College - Business Core - ACC201 - Principles of Financial Accounting
+College - Business Core - ACC201 - Principles of Financial Accounting: 1 course from ACC201
+Requirement 34: College - Business Core - CSE102 - Algorithmic Thinking and Programming
+College - Business Core - CSE102 - Algorithmic Thinking and Programming: 1 course from CSE102, additional approved courses
+Requirement 35: College - Business Core - COM 100 or COM 225 - Communication
+College - Business Core - COM 100 or COM 225 - Communication: 3 credits from COM100, COM225, additional approved courses
+Requirement 36: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 37: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.

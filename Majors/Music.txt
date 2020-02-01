@@ -1,0 +1,129 @@
+Proceed to Degree Navigator.
+Required Credits: 120    Program Version: FS19
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: College Distribution
+College Distribution: 30 credits from courses at the 300 level and above.
+Requirement 12: College - Music - Core
+College - Music - Core: 9 courses from MUS180, MUS181, MUS182, MUS183, MUS211, MUS212, MUS280, MUS281, MUS381
+Requirement 13: College - Music - Ethnomusicology
+College - Music - Ethnomusicology: 1 course from MUS409, MUS425, MUS426, MUS429, MUS430, MUS436, MUS443
+Requirement 14: College - Music - Second Language
+College - Music - Second Language: - 4 courses from 1 2ndLangs other than your own, from the courses demonstrating second year competency in one foreign language. This requirement may be satisfied by placing into a 300-level foreign language course based on a Michigan State University placement test.
+demonstrating second year competency in one foreign language. This requirement may be satisfied by placing into a 300-level foreign language course based on a Michigan State University placement test.
+Requirement 15: Major - Music BA - Capstone Experience
+Major - Music BA - Capstone Experience: 1 course from Perform a senior recital that is satisfactory to the appropriate faculty., or approved MUS paper. Contact your academic advisor.
+Requirement 16: Major - Music BA - Music Activity
+Major - Music BA - Music Activity: 4 credits from Music Activity requirement. See your academic advisor for further information.
+Requirement 17: Major - Music BA - Performance Area
+Major - Music BA - Performance Area: The required number of credits from 1 of the following sets of courses
+Piano: 8 credits
+At least 4 credits from MUS150A
+At least 4 credits from MUS350A
+Stringed Instrument: 8 credits
+At least 4 credits from MUS152E
+At least 4 credits from MUS352E
+Stringed Instrument: 8 credits
+At least 4 credits from MUS152A
+At least 4 credits from MUS352A
+Stringed Instrument: 8 credits
+At least 4 credits from MUS152B
+At least 4 credits from MUS352B
+Stringed Instrument: 8 credits
+At least 4 credits from MUS152C
+At least 4 credits from MUS352C
+Stringed Instrument: 8 credits
+At least 4 credits from MUS152D
+At least 4 credits from MUS352D
+Wind Instrument: 8 credits
+At least 4 credits from MUS153A
+At least 4 credits from MUS353A
+Wind Instrument: 8 credits
+At least 4 credits from MUS153B
+At least 4 credits from MUS353B
+Wind Instrument: 8 credits
+At least 4 credits from MUS153C
+At least 4 credits from MUS353C
+Wind Instrument: 8 credits
+At least 4 credits from MUS153D
+At least 4 credits from MUS353D
+Wind Instrument: 8 credits
+At least 4 credits from MUS153E
+At least 4 credits from MUS353E
+Wind Instrument: 8 credits
+At least 4 credits from MUS154A
+At least 4 credits from MUS354A
+Wind Instrument: 8 credits
+At least 4 credits from MUS154B
+At least 4 credits from MUS354B
+Wind Instrument: 8 credits
+At least 4 credits from MUS154C
+At least 4 credits from MUS354C
+Wind Instrument: 8 credits
+At least 4 credits from MUS154D
+At least 4 credits from MUS354D
+Wind Instrument: 8 credits
+At least 4 credits from MUS154E
+At least 4 credits from MUS354E
+Percussion Instruments: 8 credits
+At least 4 credits from MUS155
+At least 4 credits from MUS355
+Voice: 10 credits
+At least 4 credits from MUS151
+At least 4 credits from MUS351
+At least 1 credit from MUS143
+At least 1 credit from MUS144
+Conditions:
+Major - Music BA - Performance Area: All students are required to demonstrate a proficiency in the performance area they select. Those who have not must continue to enroll in the 100 level private instruction course until they have met the proficiency requirement. All students must complete an Upper Division Performance Examination in order to enroll in the 300 level lessons. (Applies to Requirement(s) 17)
+Requirement 18: Major - Music BA - Literature
+Major - Music BA - Literature: 1 course from MUS410, MUS413, MUS414, MUS415, MUS416, MUS417, MUS419, MUS420, MUS421, MUS422, MUS423, MUS424
+Requirement 19: College - Music - Open Cognate
+College - Music - Open Cognate: 12 credits from a cognate. Related courses in a single discipline or thematic area approved by the Associate Dean in the College of Music with one course at the 300-400 level.
+Requirement 20: College - Music - Non Music Cognate
+College - Music - Non Music Cognate: 12 credits from a cognate. Related courses in a single discipline or thematic area approved by the Associate Dean in the College of Music with one course at the 300-400 level outside the College of Music.
+Requirement 21: Major Distribution
+Major Distribution: 54 credits from Music courses. At least 30 but not more than 54 credits in Music courses including credits in 100-200 level courses in music performance.
+Requirement 22: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 23: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.

@@ -1,0 +1,130 @@
+Proceed to Degree Navigator.
+Required Credits: 120    Program Version: FS19
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: Major - Environmental Economics and Management - Decision-making in the Agri-Food System
+Major - Environmental Economics and Management - Decision-making in the Agri-Food System: 1 course from ABM100
+Conditions:
+A minimum grade of 2.0 for ABM100 in Requirement(s) 11
+Requirement 12: Major - Environmental Economics and Management - Data Analysis for the Agri-Food System
+Major - Environmental Economics and Management - Data Analysis for the Agri-Food System: 1 course from ABM203
+Conditions:
+A minimum grade of 2.0 for ABM203 in Requirement(s) 12
+Requirement 13: Major - Environmental Economics and Management - Professional Seminar in Agribusiness Management
+Major - Environmental Economics and Management - Professional Seminar in Agribusiness Management: 1 course from ABM210
+Conditions:
+A minimum grade of 2.0 for ABM210 in Requirement(s) 13
+Requirement 14: Major - Environmental Economics and Management - Advanced Professional Seminar in Agribusiness Management
+Major - Environmental Economics and Management - Advanced Professional Seminar in Agribusiness Management: 1 course from ABM410
+Conditions:
+A minimum grade of 2.0 for ABM410 in Requirement(s) 14
+Requirement 15: Major - Environmental Economics and Management - Accounting
+Major - Environmental Economics and Management - Accounting: 1 course from ACC230, or additional approved coursework.
+Requirement 16: Major - Environmental Economics and Management - Microeconomics and Macroeconomics
+Major - Environmental Economics and Management - Microeconomics and Macroeconomics: 2 courses from EC201, EC202
+Requirement 17: Major - Environmental Economics and Management - Ecological Economics
+Major - Environmental Economics and Management - Ecological Economics: 1 course from EEM255
+Conditions:
+A minimum grade of 2.0 for EEM255 in Requirement(s) 17
+Requirement 18: Major - Environmental Economics and Management - World Food, Population and Poverty
+Major - Environmental Economics and Management - World Food, Population and Poverty: 1 course from EEM260
+Conditions:
+A minimum grade of 2.0 for EEM260 in Requirement(s) 18
+Requirement 19: Major - Environmental Economics and Management - Environmental Economics
+Major - Environmental Economics and Management - Environmental Economics: 1 course from EEM320
+Conditions:
+A minimum grade of 2.0 for EEM320 in Requirement(s) 19
+Requirement 20: Major - Environmental Economics and Management - Corporate Environmental Management
+Major - Environmental Economics and Management - Corporate Environmental Management: 1 course from EEM405
+Conditions:
+A minimum grade of 2.0 for EEM405 in Requirement(s) 20
+Requirement 21: Major - Environmental Economics and Management - Natural Resource Economics
+Major - Environmental Economics and Management - Natural Resource Economics: 1 course from EEM460
+Conditions:
+A minimum grade of 2.0 for EEM460 in Requirement(s) 21
+Requirement 22: Major - Environmental Economics and Management - Food Product Marketing
+Major - Environmental Economics and Management - Food Product Marketing: 1 course from FIM220
+Conditions:
+A minimum grade of 2.0 for FIM220 in Requirement(s) 22
+Requirement 23: Major - Environmental Economics and Management - Introduction to Marketing
+Major - Environmental Economics and Management - Introduction to Marketing: 1 course from MKT327
+Requirement 24: Major - Environmental Economics and Management - Survey of Calculus I
+Major - Environmental Economics and Management - Survey of Calculus I: 1 course from MTH124
+Requirement 25: Major - Environmental Economics and Management - Survey of Supply Chain Management
+Major - Environmental Economics and Management - Survey of Supply Chain Management: 1 course from SCM304
+Requirement 26: Major - Environmental Economics and Management - Electives
+Major - Environmental Economics and Management - Electives: 4 courses from ABM130, ABM222, ABM225, ABM337, ABM400, ABM422, ABM425, ABM427, ABM430, ABM435, CSUS354, CSUS429, CSUS464, CSUS465, FIM224, FIM335, FIM439, FOR466, FW419, MGT325, EEM493
+Conditions:
+A minimum grade of 2.0 for all course(s) in Requirement(s) 26
+Requirement 27: Major - Environmental Economics and Management - Financial and Strategic Management
+Major - Environmental Economics and Management - Financial and Strategic Management: 1 course from ABM435, FIM439
+Conditions:
+A minimum grade of 2.0 for ABM435, FIM439 in Requirement(s) 27
+Requirement 28: Major - Environmental Economics and Management - Farm Management and Finance
+Major - Environmental Economics and Management - Farm Management and Finance: 1 course from ABM130, FI320
+Requirement 29: Major - Environmental Economics and Management - Statistics
+Major - Environmental Economics and Management - Statistics: 1 course from STT200, STT201, STT315
+Requirement 30: Major - Environmental Economics and Management - Economics
+Major - Environmental Economics and Management - Economics: 1 course from ABM303, EC301
+Requirement 31: Major - Environmental Economics and Management - Science Discipline
+Major - Environmental Economics and Management - Science Discipline: 6 credits from the same science discipline with at least 3 credits at the 300 or 400 level, as approved by the academic advisor.
+Requirement 32: College - Agriculture and Natural Resources - Mathematics
+College - Agriculture and Natural Resources - Mathematics: The required number of courses from 1 of the following sets of courses
+Option3: 1 course
+At least 1 course from MTH116
+Option4: 1 course
+At least 1 course from MTHRQMT
+Option1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from STT200, STT201
+Option2: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114
+Requirement 33: College - Agriculture and Natural Resources - Economics
+College - Agriculture and Natural Resources - Economics: 1 course from EC201, EC202
+Requirement 34: College Distribution
+College Distribution: 26 credits from courses in the College of Agriculture and Natural Resources.
+Requirement 35: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 36: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.

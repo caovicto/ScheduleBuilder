@@ -1,0 +1,128 @@
+Proceed to Degree Navigator.
+Required Credits: 120    Program Version: FS19
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: Major - Interdisciplinary Studies in Social Science - BS - Foundation Courses
+Major - Interdisciplinary Studies in Social Science - BS - Foundation Courses: 2 courses from ANP201, EC201, GEO204, HST110, PLS200, PSY101, SOC100 and the additional foundation course found within the cognate.
+Requirement 12: Major - Interdisciplinary Studies in Social Science - BS - Selected Topics
+Major - Interdisciplinary Studies in Social Science - BS - Selected Topics: 1 course from Integration of Social Science Perspectives; SSC299
+Conditions:
+Major - Interdisciplinary Studies in Social Science - BS - Selected Topics: This course must be completed following completion of the foundation course and prior to the capstone course. (Applies to Requirement(s) 12)
+Requirement 13: Major - Interdisciplinary Studies in Social Science - BS - Capstone - Tier II Writing
+Major - Interdisciplinary Studies in Social Science - BS - Capstone - Tier II Writing: 1 course from SSC499
+Requirement 14: Major - Interdisciplinary Studies in Social Science - BS - Concentration
+Major - Interdisciplinary Studies in Social Science - BS - Concentration: The required number of credits from 1 of the following sets of courses
+Community Governance and Advocacy: 15 credits
+At least 15 credits from ANP321, ANP330, ANP426, ANP430, ANP439, GEO413, GEO418, HST306, HST413, PLS301, PLS302, PLS313, PLS320, PLS331, PLS333, PSY270, SOC215, SOC330, SOC331, SOC361, SOC363, SOC375, SOC424, SOC481, SSC493, SW475, CJ110, CJ355, CJ474, EC335, EC380, EC425, HDFS442, UP100, UP201, UP353
+Health and Society: 15 credits
+At least 15 credits from EC498, EPI390, GEO435, HST420, HST425, PSY209, PSY280, PSY320, PSY409, SOC215, SOC216, SOC368, SOC424, SOC427, SOC451, SOC452, SOC475, SSC493, SW472, SW474, ANP204, ANP206, ANP270, ANP370, ANP423, ANP425, ANP471, NEU310, HDFS225, HDFS445, HDFS449
+Liberal Studies: 27 credits
+At least 9 credits from proposed outline of the course work to be taken with a rationale for each course
+At least 9 credits from a statement of purpose for the proposed course work
+At least 9 credits from a set of specific learning outcomes that will be achieved through the course work that is not available in other majors at the university, or in the college as approved by advisor
+Conditions:
+Major - Interdisciplinary Studies in Social Science - BS - Cognate: STUDENTS SELECTED COGNATE SUBJECT COURSES CANNOT BE USED IN SELECTED CONCENTRATION. PLEASE CONTACT YOUR ACADEMIC ADVISOR.Students in the Community Governance and Advocacy concentration can choose from the anthropology, economics, history, political science, and sociology cognates.Students in the Health and Society concentration can choose from the anthropology, economics, geography, psychology, and sociology cognates.Student in the International Studies concentration can choose from the anthropology, economics, geography, history, and political science cognates.Students in the Human Capital and Society concentrations can choose from the anthropology, economics, history, psychology, and sociology cognates.Students in the Liberal Studies concentration are not required to complete a disciplinary cognate. (Applies to Requirement(s) 14, 15)
+Major - Interdisciplinary Studies in Social Science - BS - Concentration: Students may take no more than two courses from a single discipline with the concentration. (Applies to Requirement(s) 14)
+Requirement 15: Major - Interdisciplinary Studies in Social Science - BS - Cognate
+Major - Interdisciplinary Studies in Social Science - BS - Cognate: The required number of courses from 1 of the following sets of courses
+Psychology Cognate: 5 courses
+At least 1 course from PSY295
+At least 2 courses from PSY200, PSY209, PSY235, PSY236, PSY244, PSY270, PSY280, PSY255
+At least 1 course from Psychology course at the 300-400 level
+At least 1 course from PSY101
+Sociology Cognate: 5 courses
+At least 2 courses from SOC281, SOC282
+At least 1 course from SOC215, SOC216, SOC330
+At least 1 course from Sociology Course at the 300-400 level
+At least 1 course from SOC100
+PLS-American Political Institutions Cognate: 5 courses
+At least 2 courses from PLS100, PLS201
+At least 2 courses from PLS301, PLS302, PLS310, PLS320, PLS321, PLS324, PLS325, PLS331, PLS334, PLS422
+At least 1 course from PLS200
+PLS-Political Philosophy Cognate: 5 courses
+At least 2 courses from PLS170, PLS201
+At least 2 courses from PLS371, PLS372, PLS377, PLS422
+At least 1 course from PLS200
+History Cognate: 5 courses
+At least 1 course from HST201
+At least 1 course from US Racial, Ethnic and Cultural History, Political, Constitutional and Legal History, Diplomacy and War, Asia, Women, Gender and Family, The History of a Specific Area of the WorldAfrica, Modern Europe, Latin Americaareas within IDS History Cognate
+At least 2 courses from IDS-HST-3-400_FS14
+At least 1 course from HST110
+Geography Cognate: 5 courses
+At least 1 course from GEO113, GEO151, GEO206
+At least 1 course from GEO221, GEO324, GEO363
+At least 1 course from Geography courses at the 300 level
+At least 1 course from Geography courses at the 400 level
+At least 1 course from GEO204
+Economics Cognate: 5 courses
+At least 1 course from EC202, EC252H
+At least 3 courses from Economics courses at the 300400 level
+At least 1 course from EC201
+Anthropology Cognate: 5 courses
+At least 1 course from ANP206
+At least 1 course from ANP321, ANP330, ANP363, ANP370, ANP420, ANP422, ANP423, ANP424, ANP426, ANP430, ANP431, ANP436, ANP440, ANP441, ANP460, ANP462
+At least 1 course from ANP410, ANP411, ANP414, ANP415, ANP416, ANP451, ANP452, ANP453
+At least 1 course from ANP201
+At least 1 course from ANP320, ANP429, ANP461, ANP463, ANP464
+Global Issues: 5 courses
+At least 2 courses from PLS201, PLS200
+At least 1 course from PLS140, PLS160
+At least 2 courses from PLS322, PLS342, PLS344, PLS351, PLS352, PLS354, PLS356, PLS357, PLS358, PLS422, PLS441
+Conditions:
+Major - Interdisciplinary Studies in Social Science - BS - Cognate: STUDENTS SELECTED COGNATE SUBJECT COURSES CANNOT BE USED IN SELECTED CONCENTRATION. PLEASE CONTACT YOUR ACADEMIC ADVISOR.Students in the Community Governance and Advocacy concentration can choose from the anthropology, economics, history, political science, and sociology cognates.Students in the Health and Society concentration can choose from the anthropology, economics, geography, psychology, and sociology cognates.Student in the International Studies concentration can choose from the anthropology, economics, geography, history, and political science cognates.Students in the Human Capital and Society concentrations can choose from the anthropology, economics, history, psychology, and sociology cognates.Students in the Liberal Studies concentration are not required to complete a disciplinary cognate. (Applies to Requirement(s) 14, 15)
+Requirement 16: Major - Interdisciplinary Studies in Social Science - BS - Business Emphasis
+Major - Interdisciplinary Studies in Social Science - BS - Business Emphasis: 0 courses from ACC230, FI320, GBL323, MGT325, MKT327
+Requirement 17: College - Social Science - Experiential Learning
+College - Social Science - Experiential Learning: 3 credits from an experiential learning course as approved by the College of Social Science.
+Requirement 18: College - Social Science - Interdisciplinary Minor
+College - Social Science - Interdisciplinary Minor: 15 credits from an interdisciplinary minor as approved by the College of Social Science.
+Requirement 19: College - Social Science - STEM
+College - Social Science - STEM: 12 credits from Science, Technology, Engineering, or Mathematics courses as approved by the College of Social Science., and prematriculation STEM approved.
+Requirement 20: College - Social Science - Arts and Humanities
+College - Social Science - Arts and Humanities: 6 credits from Arts and Humanities courses as approved by the College of Social Science., and prematriculation Arts and Humanities approved.
+Requirement 21: College Distribution
+College Distribution: 30 credits from courses at the 300 level and above.
+Requirement 22: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 23: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.

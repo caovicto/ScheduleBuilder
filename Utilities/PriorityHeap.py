@@ -1,7 +1,7 @@
+from DataStructures.CourseGraph import *
+
+
 class Node:
-    """
-    Node definition should not be changed in any way
-    """
     __slots__ = ['_key', '_value']
 
     def __init__(self, k, v):
@@ -19,7 +19,7 @@ class Node:
         :param other: second node to be compared to
         :return: True if the node is less than other, False if otherwise
         """
-        return self._key < other.get_key() or (self._key == other.get_key() and self._value < other.get_value())
+        return self._key < other.get_key() or (self._key == other.get_key() and self._value[0] < other.get_value()[0])
 
     def __gt__(self, other):
         """
@@ -27,7 +27,7 @@ class Node:
         :param other: second node to be compared to
         :return: True if the node is greater than other, False if otherwise
         """
-        return self._key > other.get_key() or (self._key == other.get_key() and self._value > other.get_value())
+        return self._key > other.get_key() or (self._key == other.get_key() and self._value[0] > other.get_value()[0])
 
     def __eq__(self, other):
         """
@@ -42,7 +42,7 @@ class Node:
         Converts node to a string
         :return: string representation of node
         """
-        return '({0},{1})'.format(self._key, self._value)
+        return str(self._key) + ", " + str(self._value[0]) + ", " + str(self._value[1])
 
     __repr__ = __str__
 
@@ -69,23 +69,20 @@ class Node:
 
 
 class PriorityHeap:
-    """
-    Partially completed data structure. Do not modify completed portions in any way
-    """
-    __slots__ = '_data'
-
-    def __init__(self):
+    def __init__(self, g):
         """
         Initializes the priority heap
         """
         self._data = []
+        self.graph = g
+        self.pqLocator = {}
 
     def __str__(self):
         """
         Converts the priority heap to a string
         :return: string representation of the heap
         """
-        return ', '.join(str(item) for item in self._data)
+        return '\n\n'.join(str(item) for item in self._data)
 
     def __len__(self):
         """
@@ -102,15 +99,16 @@ class PriorityHeap:
 
         :return:
         """
-        num_mins = 0
-        priority = self.__data[0].get_key()
 
-        for i in range(len(self)):
-            if self._data[i].get_key() != priority:
-                break
-            num_mins += 1
+        ret_list = []
+        i = 0
+        while i < len(self._data) and i < 10:
+            priority = self._data[0].get_key()
+            if self._data[i].get_key() == priority:
+                ret_list.append(self._data[i].get_value()[1])
+            i += 1
 
-        return num_mins
+        return ret_list
 
 
     def empty(self):
@@ -127,7 +125,7 @@ class PriorityHeap:
         """
         # if not empty
         if not self.empty():
-            return self._data[0].get_value()
+            return self._data[0].get_value()[1].course
         # if empty
         return None
 
@@ -147,7 +145,7 @@ class PriorityHeap:
     def pop(self):
         """
         Removes minimum element of the heap
-        :return: returns Node of removed element
+        :return: returns value of Node
         """
         # if not empty
         if not self.empty():
@@ -158,11 +156,11 @@ class PriorityHeap:
             # move swapped node to correct place
             self.percolate_down(0)
 
-            return popped.get_value()
+            return popped.get_value()[1]
         # if empty
         return None
 
-    def min_child(self, index):
+    def max_child(self, index):
         """
         Finds the minimum child of the index
         :param index: index within the heap array
@@ -174,7 +172,7 @@ class PriorityHeap:
 
         # if has both children
         if left and right:
-            if left > right:
+            if left < right:
                 return (index*2)+2
             return (index*2)+1
 
@@ -201,7 +199,7 @@ class PriorityHeap:
             return
 
         p_ind = (index-1)//2
-        # swap if parent is larger than current and continue percolating
+        # swap if parent is greater than current and continue percolating
         if self._data[p_ind] > self._data[index]:
             self.swap(p_ind, index)
             self.percolate_up(p_ind)
@@ -213,9 +211,9 @@ class PriorityHeap:
         :param index: index of node to percolate down
         :return: None
         """
-        child = self.min_child(index)
+        child = self.max_child(index)
 
-        # swap if child is less than current and continue percolating
+        # swap if child is less than than current and continue percolating
         if child and self._data[child] < self._data[index]:
             self.swap(child, index)
             self.percolate_down(child)
@@ -232,10 +230,10 @@ class PriorityHeap:
             old_key = self._data[index].get_key()
             self._data[index].set_key(new_key)
 
-            # if new key is greater than old key
+            # if new key greater percolate down
             if new_key > old_key:
                 self.percolate_down(index)
-            # if new key is less than old key
+            # if new key is less than percolate up
             elif new_key < old_key:
                 self.percolate_up(index)
 
@@ -250,20 +248,57 @@ class PriorityHeap:
         self._data[x], self._data[y] = self._data[y], self._data[x]
 
     def find_index(self, vertex):
+        """
+
+        """
         for i in range(len(self._data)):
-            if self._data[i].get_value() == vertex:
+            if self._data[i].get_value()[1] == vertex:
                 return i
 
     def remove_top(self):
         """
-
+        :return: (Course) course object
         """
         popped = self.pop()
+        self.graph.complete_course(popped.get_code())
         # remove in edge incident from out edge destination
         for ele in popped.all_out_edges():
-            dest = ele.get_dest()
-            # dest.delete_in_edge(popped)
-            #
-            # self.change_priority()
-            #
-        return popped.get_value()
+            vert = self.graph.get_vertex(ele)
+            ind = self.find_index(vert)
+            if ind:
+                new_key = vert.num_in
+                self.change_priority(ind, new_key)
+
+        return popped
+
+    def remove_index(self, vertex):
+        """
+        :return: (Course) course object
+        """
+        self.graph.complete_course(vertex.get_code())
+
+        # swap min element with last and pop from data
+        ind = self.find_index(vertex)
+        popped = self._data[ind].get_value()[1]
+        self.swap(ind, len(self) - 1)  # swap elements
+        self._data.pop()
+        # move swapped node to correct place
+        self.percolate_down(0)
+
+        # remove in edge incident from out edge destination
+        for ele in popped.all_out_edges():
+            vert = self.graph.get_vertex(ele)
+            ind = self.find_index(vert)
+            if ind:
+                new_key = vert.num_in
+                self.change_priority(ind, new_key)
+
+        return popped
+
+    def print_nodes(self):
+        for ele in self._data:
+            # print('\n', ele.get_value().course)
+            # print("in", ele.get_value().in_edges, ele.get_value().num_in)
+            # print("out", ele.get_value().out_edges, ele.get_value().num_out)
+            print()
+            print(ele.get_value())

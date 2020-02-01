@@ -1,0 +1,116 @@
+Proceed to Degree Navigator.
+Required Credits: 128    Program Version: FS19
+Requirement 1: University Tier I Writing
+University Tier I Writing: 1 course from WRA101, WRA195H, LB133, MC111, MC112, RCAH111
+Requirement 2: University Mathematics
+University Mathematics: The required number of courses from 1 of the following sets of courses
+MTH2: 1 course
+At least 1 course from LB117, MTH116, MTHRQMT, MTHWAIV1, MTHWAIV2, Mathematics Pre-Matriculation, Mathematics Post-Matriculation
+MTH1: 2 courses
+At least 1 course from MTH103, MTH103WAIV
+At least 1 course from MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+MTH4: 2 courses
+At least 1 course from MTH101, MTH102
+At least 1 course from STT200, STT201
+MTH3: 2 courses
+At least 2 courses from MTH101, MTH102, MTH103, MTH103WAIV
+MTH5: 3 courses
+At least 2 courses from MTH103A, MTH103B
+At least 1 course from MTH101, MTH102, MTH114, MTH124, MTH132, MTH152H, MTH201, STT200, STT201
+Requirement 3: University IAH201 - IAH210
+University IAH201 - IAH210: 4 credits from IAH201, IAH202, IAH203, IAH204, IAH205, IAH206, IAH207, IAH208, IAH209, IAH210, RCAH201, ANY IAH BELOW 211
+Requirement 4: University IAH211 or higher
+University IAH211 or higher: 4 credits from IAH211A, IAH211B, IAH211C, IAH211D, IAH221A, IAH221B, IAH221C, IAH231A, IAH231B, IAH231C, IAH241A, IAH241B, IAH241C, IAH241D, IAH241E, IAH241F, IAH241G, RCAH202, TRANSFER IAH, ANY IAH211 OR HIGHER, approved LB courses
+Requirement 5: University ISS200 Series
+University ISS200 Series: 4 credits from ISS210, ISS215, ISS220, ISS225, ISS230, ISS235, MC201, TRANSFER ISS 200 LEVEL, ANY ISS 200 LEVEL
+Requirement 6: University ISS300 Series
+University ISS300 Series: 4 credits from ISS305, ISS308, ISS310, ISS315, ISS318, ISS320, ISS325, ISS327, ISS328, ISS330A, ISS330B, ISS330C, ISS335, ISS336, MC202, ANY ISS 300 LEVEL, approved LB courses
+Requirement 7: University ISB
+University ISB: 3 credits from ISB200, ISB201, ISB202, ISB204, TRANSFER ISB, ISB ALTERNATIVE TRACK, ANY 3 CREDIT ISB COURSE
+Requirement 8: University ISP
+University ISP: 3 credits from ISP203A, ISP203B, ISP205, ISP207, ISP209, ISP213H, ISP215, ISP217, ISP220, ISP221, TRANSFER ISP, ISP ALTERNATIVE TRACK, ANY 3 CREDIT ISP COURSE
+Requirement 9: University Laboratory Experience
+University Laboratory Experience: The required number of credits from 1 of the following sets of courses
+Univ Lab: 2 credits
+At least 2 credits from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+Alternative: 2 credits
+At least 1 credit from ISB201L, ISB208L, ISP203L, ISP205L, ISP207L, ISP209L, ISP217L, ANY 2 CREDIT ISB/ISP LAB, LAB EXPERIENCE ALTERNATIVE TRACK, TRANSFER LAB
+At least 1 credit from an Alternative Track Lab credit
+Requirement 10: University Diversity Distribution
+University Diversity Distribution: A total 2 courses
+At least 1 course from NationalIAH or ISS courses emphasizing national diversity or both national diversity and international and multicultural diversity
+At least 1 course from InternationalIAH or ISS courses emphasizing international and multicultural diversity or both national diversity and international and multicultural diversity
+Conditions:
+University Diversity Distribution: No more than 1 course from IAH or ISS emphasizing both national diversity and international and multicultural diversity in Requirement(s) 10
+Requirement 11: Major - Mechanical Engineering - Statics
+Major - Mechanical Engineering - Statics: 1 course from CE221
+Requirement 12: Major - Mechanical Engineering - Chemistry Laboratory 1
+Major - Mechanical Engineering - Chemistry Laboratory 1: 1 course from CEM161
+Requirement 13: Major - Mechanical Engineering - Electronic Instrumentation
+Major - Mechanical Engineering - Electronic Instrumentation: 1 course from ECE345
+Requirement 14: Major - Mechanical Engineering - Engineering Graphics
+Major - Mechanical Engineering - Engineering Graphics: 1 course from ME280
+Requirement 15: Major - Mechanical Engineering - Thermodynamics
+Major - Mechanical Engineering - Thermodynamics: 1 course from ME201
+Requirement 16: Major - Mechanical Engineering - Mechanics of Deformable Solids
+Major - Mechanical Engineering - Mechanics of Deformable Solids: 1 course from ME222
+Requirement 17: Major - Mechanical Engineering - Professional Issues in Mechanical Engineering
+Major - Mechanical Engineering - Professional Issues in Mechanical Engineering: 1 course from ME300
+Requirement 18: Major - Mechanical Engineering - Fluid Mechanics
+Major - Mechanical Engineering - Fluid Mechanics: 1 course from ME332
+Requirement 19: Major - Mechanical Engineering - Dynamics
+Major - Mechanical Engineering - Dynamics: 1 course from ME361
+Requirement 20: Major - Mechanical Engineering - Mechanical Design I and II
+Major - Mechanical Engineering - Mechanical Design I and II: 2 courses from ME370, ME470
+Requirement 21: Major - Mechanical Engineering - Mechanical Engineering Analysis
+Major - Mechanical Engineering - Mechanical Engineering Analysis: 1 course from ME391
+Requirement 22: Major - Mechanical Engineering - Heat Transfer and Laboratory
+Major - Mechanical Engineering - Heat Transfer and Laboratory: 2 courses from ME410, ME412
+Requirement 23: Major - Mechanical Engineering - Control Systems
+Major - Mechanical Engineering - Control Systems: 1 course from ME451
+Requirement 24: Major - Mechanical Engineering - Mechanical Vibrations
+Major - Mechanical Engineering - Mechanical Vibrations: 1 course from ME461
+Requirement 25: Major - Mechanical Engineering - Design Project
+Major - Mechanical Engineering - Design Project: 1 course from ME481
+Requirement 26: Major - Mechanical Engineering - Materials Science and Engineering
+Major - Mechanical Engineering - Materials Science and Engineering: 1 course from MSE250
+Requirement 27: Major - Mechanical Engineering - Probability and Statistics
+Major - Mechanical Engineering - Probability and Statistics: 1 course from STT351
+Requirement 28: Major - Mechanical Engineering - Senior Electives and Design
+Major - Mechanical Engineering - Senior Electives and Design: A total 12 credits
+At least 3 credits from ME416, ME417, ME442, ME445, ME465, ME475, ME497, ME414, ME478
+At least 9 credits from ME416, ME417, ME422, ME423, ME425, ME426, ME440, ME442, ME444, ME445, ME456, ME464, ME465, ME475, ME477, ME478, ME490, ME491, ME494, ME495, ME497, ME433, ME413, ME414, ME441
+Requirement 29: Engineering College Admission - Core Courses
+Engineering College Admission - Core Courses: A total 6 courses
+At least 1 course from EGR102, CSE231, CSE220
+At least 1 course from EGR100
+At least 1 course from MTH132
+At least 1 course from MTH133
+At least 1 course from CEM141, CEM151
+At least 1 course from PHY183
+Requirement 30: College - Engineering - Mathematics
+College - Engineering - Mathematics: 3 courses from MTH132, MTH133, MTH234
+Requirement 31: College - Engineering - Mathematics Additional
+College - Engineering - Mathematics Additional: 1 course from MTH235
+Requirement 32: College - Engineering - Chemistry
+College - Engineering - Chemistry: 1 course from CEM141, CEM151
+Requirement 33: College - Engineering - Physics
+College - Engineering - Physics: 1 course from PHY183, PHY183B
+Requirement 34: College - Engineering - Physics Additional
+College - Engineering - Physics Additional: 1 course from PHY184, PHY184B
+Requirement 35: College - Engineering - Computer Science
+College - Engineering - Computer Science: 1 course from CSE231
+Requirement 36: College - Engineering - Introduction to Engineering Design
+College - Engineering - Introduction to Engineering Design: 1 course from EGR100
+Requirement 37: Alternative Track for Integrative Studies - ISB
+Alternative Track for Integrative Studies - ISB: 1 course from BS161, PLB105, ENT205, IBIO150, MMG141, MMG201, MMG301, PSL250, ANY 3 CREDIT ISB COURSE
+Requirement 38: Alternative Track for Integrative Studies - ISP
+Alternative Track for Integrative Studies - ISP: 1 course from CEM141, CEM151, PHY183, PHY183B, PHY184, PHY184B
+Requirement 39: Alternative Track for Integrative Studies - Lab
+Alternative Track for Integrative Studies - Lab: 1 course from PLB106, CEM161, PHY191
+Requirement 40: Electives
+Electives: 0 credits from Electives at Michigan State University and transfer coursework. This number can change based on the credits of the coursework taken to fulfill University, College, and Major requirements. Please contact your academic advisor with any questions.
+Requirement 41: University Residency
+University Residency: 30 credits from MSU coursework, 27 credits from MSU courses taken after reaching junior standing, 20 credits from courses offered by MSU while admitted to major & 20 of the last 30 credits must be MSU courses. Please see academic advisor.
+Requirement 42
+128 credits required to complete this degreeThe specified coursework in this program may not equal this total. The difference must be made up of open options which must be acceptable within the limits of this program. In cases of doubt, please consult an academic advisor.

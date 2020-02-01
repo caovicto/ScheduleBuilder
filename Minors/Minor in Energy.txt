@@ -1,0 +1,22 @@
+Proceed to Degree Navigator.
+Required Credits: 21    Program Version: FS17
+Requirement 1: Minor - Energy - Materials and Energy
+Minor - Energy - Materials and Energy: 1 course from BE230, CHE201, MSE250
+Requirement 2: Minor - Energy - Thermodynamics
+Minor - Energy - Thermodynamics: 1 course from BE351, CHE321, ME201, MSE310
+Requirement 3: Minor - Energy - Electrical Circuits and Systems
+Minor - Energy - Electrical Circuits and Systems: 1 course from BE456, ECE202, ECE345
+Requirement 4: Minor - Energy - Energy Systems and Applications
+Minor - Energy - Energy Systems and Applications: 1 course from ME417, MSE410
+Conditions:
+Minor - Energy: A course used to fulfill requirement 4 or 5 may not be used to fulfill requirement 6. Not all courses will be available to all majors and students must meet all course prerequisites and restrictions. (Applies to Requirement(s) 4, 5, 6)
+Requirement 5: Minor - Energy - Sustainability
+Minor - Energy - Sustainability: 1 course from AESC310, CSUS200, EEP255
+Conditions:
+Minor - Energy: A course used to fulfill requirement 4 or 5 may not be used to fulfill requirement 6. Not all courses will be available to all majors and students must meet all course prerequisites and restrictions. (Applies to Requirement(s) 4, 5, 6)
+Requirement 6: Minor - Energy - Required Elective
+Minor - Energy - Required Elective: 2 courses from AFRE829, BE469, CHE468, CSS467, CSUS200, CSUS491, ECE305, ECE320, ECE423, ECE425, ECE476, ECE821, EEP320, ENE481, ENE489, FOR414, GLG201, GLG301, GLG471, ISP221, MC450, ME417, ME422, ME442, ME444, MSE410, MSE460
+Conditions:
+Minor - Energy: A course used to fulfill requirement 4 or 5 may not be used to fulfill requirement 6. Not all courses will be available to all majors and students must meet all course prerequisites and restrictions. (Applies to Requirement(s) 4, 5, 6)
+Requirement 7
+21 credits required to complete this degreeThe specified coursework in this program may not equal this total. The difference must be made up of open options which must be acceptable within the limits of this program. In cases of doubt, please consult an academic advisor.
