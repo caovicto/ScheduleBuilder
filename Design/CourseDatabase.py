@@ -1,4 +1,5 @@
 import sqlite3
+import os
 
 from Design.Term import *
 from Design.Subject import *
@@ -27,7 +28,8 @@ def getTerms(termList):
 
 class CourseDatabase:
     def __init__(self):
-        self.path = "/home/victoria/Projects/ScheduleBuilder/Databases/Coursedb.sqlite3"
+        cwd = os.getcwd()
+        self.path = cwd+"/Databases/Coursedb.sqlite3"
 
         self.connection = sqlite3.connect(self.path)
         self.cur = self.connection.cursor()
@@ -71,7 +73,7 @@ class CourseDatabase:
             print("List Courses from Subject: 2 <subject code>")
             print("List Courses from Subject with Level: 3 <subject code> [1-4]")
             print("Search Course: 4 <code>")
-            print("Exit: 666")
+            print("Exit: 6")
             print("***************************************************************")
             request = input("\nCommand: ")
             print()
@@ -106,7 +108,7 @@ class CourseDatabase:
                             print("Code: "+ele[0], " |  Name: "+ele[1], "\nCredits:"+ele[3], " |  Prerequisites:"+str(ele[4])+"\n")
                             break
 
-                elif request == "666":
+                elif request == "6":
                     done = True
 
                 else:

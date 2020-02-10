@@ -23,8 +23,12 @@ class Requirement:
 
             self.text = requirementString
 
-            brokenReq = requirementString.split(':')
-            self.name = brokenReq[1].split('\n')[0][1:]
+            if requirementString.find("set") != -1 and re.findall(r":*\n", requirementString):
+                brokenReq = requirementString.split('\n')
+                self.name = brokenReq[1].split('\n')[0][1:]
+            else:
+                brokenReq = requirementString.split(':')
+                self.name = brokenReq[1].split('\n')[0][1:]
 
             for ele in brokenReq:
                 self.addReq(ele)

@@ -5,7 +5,8 @@ from Design.Program import *
 
 class ProgramDatabase:
     def __init__(self):
-        self.path = "/home/victoria/Projects/ScheduleBuilder/Databases/Programdb.sqlite3"
+        cwd = os.getcwd()
+        self.path = cwd + "/Databases/Programdb.sqlite3"
 
         self.connection = sqlite3.connect(self.path)
         self.cur = self.connection.cursor()
